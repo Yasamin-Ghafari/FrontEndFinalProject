@@ -592,19 +592,16 @@ video {
   }
 }
 
-@font-face {
-  font-family: 'IranSans';
+/* @font-face {
+        font-family: 'IranSans';
+        src: url('/public/fonts/iran_sans/IRANSansWeb_Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    } */
 
-  src: url('/public/fonts/iran_sans/IRANSansWeb_Bold.ttf') format('truetype');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-body {
-  font-family: IranSans, sans-serif;
-}
+/* body {
+        @apply font-iransans;
+    } */
 
 .absolute {
   position: absolute;
