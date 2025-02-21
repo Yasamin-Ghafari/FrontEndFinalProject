@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
 
-      // fontFamily: {
-      //   iransans: ["IranSans", "sans-serif"], // اضافه کردن فونت به Tailwind
-      // },
+      fontFamily: {
+        iransans: ["IranSans", "sans-serif"], // اضافه کردن فونت به Tailwind
+      },
 
       container: {
         center: true,
