@@ -55,6 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
         { buttonId: "arrow", menuId: "menu1" },
         { buttonId: "arrow1", menuId: "menu2" },
         { buttonId: "arrow2", menuId: "menu3" },
+        { buttonId: "arrow3", menuId: "menu4" },
+        { buttonId: "arrow4", menuId: "menu5" },
+        { buttonId: "arrow5", menuId: "menu6" },
     ];
 
     toggleMenus.forEach(({ buttonId, menuId }) => {
@@ -176,10 +179,32 @@ new Swiper('.myswiper1',{
 
 
 // لست مشاغل(مواردبیشتر)
-document.getElementById("toggleButton").addEventListener("click", function () {
-    document.querySelectorAll(".more-items").forEach(item => {
-        item.classList.toggle("hidden");
+document.addEventListener("DOMContentLoaded", function () {
+    // گرفتن تمام دکمه‌های "موارد بیشتر" برای هر ستون
+    document.querySelectorAll("[id^=toggleButton]").forEach(button => {
+        button.addEventListener("click", function () {
+            // پیدا کردن ستون مربوطه و نمایش آیتم‌های مخفی
+            let parentDiv = this.closest("div").parentElement;
+            parentDiv.querySelectorAll(".more-items").forEach(item => {
+                item.classList.toggle("hidden");
+            });
+
+            // تغییر متن دکمه
+            this.textContent = this.textContent === "موارد بیشتر" ? "موارد کمتر" : "موارد بیشتر";
+        });
     });
 
-    this.textContent = this.textContent === "موارد بیشتر" ? "موارد کمتر" : "موارد بیشتر";
+    // عملکرد دکمه کلی برای حالت دسکتاپ
+    document.getElementById("toggleButton").addEventListener("click", function () {
+        let hiddenItems = document.querySelectorAll(".more-items.hidden");
+        let visibleItems = document.querySelectorAll(".more-items:not(.hidden)");
+
+        if (hiddenItems.length > 0) {
+            hiddenItems.forEach(item => item.classList.remove("hidden"));
+            this.textContent = "موارد کمتر";
+        } else {
+            visibleItems.forEach(item => item.classList.add("hidden"));
+            this.textContent = "موارد بیشتر";
+        }
+    });
 });
