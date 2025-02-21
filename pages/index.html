@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../dist/all.min.css"/>
+    <link href="../dist/stylesheet.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- header -->
+    <section class="bg-gray-200 ">
+      <div class="container p-4 flex justify-around  items-center">
+        <!-- mobile -->
+        <div class="">
+          <button id="menuButton" class="px-3 py-2 bg-gray-100 text-white rounded lg:hidden"><i class="fa-sharp fa-solid fa-bars"></i></button>
+          <ul
+            id="dropdownMenu"
+            class="hidden z-10 absolute bg-gray-200 p-3 w-full my-4 right-0 border border-t-slate-100 lg:hidden"
+          >
+              <li class="flex hover:bg-gray-100  p-4 gap-2.5 bg-gray-200 border border-b-gray-300">
+                <button class="flex">
+                  <i class="fa-solid fa-house text-yellow-300 px-2"></i>
+                  <span class="text-white">خانه</span>
+                </button>
+              </li>
+              <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
+                <button class="flex">
+                  <i class="fa-solid fa-magnifying-glass text-yellow-300 px-2 "></i>
+                  <span class="text-white">جستجوی مشاغل</span>
+                </button>
+              </li>
+              <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
+                <button class="flex">
+                  <i class="fa-regular fa-star text-yellow-300 px-2"></i>
+                  <span class="text-white">رزومه ساز</span>
+                </button>
+              </li>
+              <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
+                <button class="flex">
+                  <i class="fa-regular fa-gem text-yellow-300 px-2"></i>
+                  <span class="text-white">۵۰ شرکت برتر</span>
+                </button>
+              </li>
+              <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
+                <button class="flex">
+                  <i class="fa-regular fa-building text-yellow-300 px-2"></i>
+                  <span class="text-white">بخش کارفرمایان</span>
+                </button>
+              </li>
+          </ul>
+          <button class="lg:hidden px-1 text-gray-300">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="font-bold text-2xl text-white lg:hidden">jobinja</div>
+        <div class="lg:hidden">
+         <button class="text-gray-300 p-2">
+          <i class="fa-regular fa-bell"></i>
+         </button>
+          <button id="btn" class="mx-1 text-gray-300 p-2">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul id="listButton" class="hidden absolute w-1/3 border-t border-gray-300 px-5 my-4 lg:hidden bg-gray-200">
+            <a href="/sign-up">
+              <li class="text-white border-b py-2 border-gray-300">ثبت نام کارجو</li>
+            </a>
+            <a href="/sing-in">
+              <li class="text-white py-2">ورود کارجو</li>
+            </a>
+          </ul>
+        </div>
+        <!-- laptop -->
+        <ul class="hidden lg:flex">
+          <button>
+            <li class="flex p-4 gap-2.5 border-l border-gray-500 items-center">
+              <i class="fa-solid fa-house text-yellow-300"></i>
+              <p class="text-white">خانه</p>
+            </li>
+          </button>
+          <button>
+            <li class="flex p-4 gap-2.5 border-l border-gray-500 items-center">
+              <i class="fa-solid fa-magnifying-glass text-yellow-300"></i>
+              <p class="text-white">جستجوی مشاغل</p>
+            </li>
+          </button>
+            <li class="flex p-4 gap-2.5 border-l border-gray-500">
+              <i class="fa-regular fa-star text-yellow-300"></i>
+              <p class="text-white">رزومه ساز</p>
+            </li>
+          <button>
+            <li class="flex p-4 gap-2.5 border-l border-gray-500 items-center">
+              <i class="fa-regular fa-gem text-yellow-300"></i>
+              <p class="text-white">۵۰ شرکت برتر</p>
+            </li>
+          </button>
+          <button>
+            <li class="flex p-4 gap-2.5 border-l border-gray-500 items-center">
+              <i class="fa-regular fa-building text-yellow-300"></i>
+              <p class="text-white">بخش کارفرمایان</p>
+            </li>
+          </button>
+        </ul>
+        <ul class="hidden lg:flex">
+          <button>
+            <li class="flex p-4 gap-2.5 items-center">
+              <i class="fa-regular fa-bell text-yellow-300"></i>
+            </li>
+          </button>
+          <a href="/sign-up">
+            <li class="flex p-4 gap-2.5 items-center">
+              <i class="fa-solid fa-user text-yellow-300"></i>
+              <p class="text-white">ثبت نام کارجو</p>
+            </li>
+          </a>
+          <button>
+            <li class="flex p-4 gap-2.5 items-center">
+              <i class="fa-solid fa-right-to-bracket text-yellow-300"></i>
+              <p class="text-white">ورود کارجو</p>
+            </li>
+          </button>
+          <a href="/">
+            <li class="flex p-4 gap-2.5 border-r">
+              <p class="text-white">jobinja</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </section>
+
+    <!--  blue header-->
+    <section class="bg-blue-100 h-auto py-5 flex flex-col items-center justify-center">
+      <div class="container">
+        <h1 class="text-2xl text-white text-center">۲۲,۳۲۱ آگهی استخدام فعال در ۹,۲۹۷ شرکت ایرانی</h1>
+        <h2 class="text-lg mt-2 opacity-[.7] text-white text-center">جابینجا: سامانه کاریابی آنلاین با بیشترین تعداد آگهی استخدام در ایران</h2>
+        <div class="mt-12 ">
+          <div class="flex flex-col lg:flex-row justify-center items-center">
+            <div class="relative ">
+              <input type="text" placeholder="عنوان شغلی، نام شرکت، مهارت یا..." class=" rounded w-screen lg:w-[321px] h-[50px] ml-[5px] bg-white font-bold"/>
+            </div>
+            <div class="flex">
+              <div class="relative w-[321px] hidden lg:block" data-select-container>
+                <button class="w-full h-[50px] rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
+                  <span class="text-gray-200 opacity-55" data-selected-option>همه استان ها</span>
+                  <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+                <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg mt-1 hidden z-[1000]" data-dropdown>
+                  <input type="text" class="w-full p-2 border-b border-gray-300 focus:outline-none" data-search-input placeholder="جستجو...">
+                  <ul class="max-h-60 overflow-auto" data-options-list>
+                    <li class="p-2 hover:bg-gray-200 cursor-pointer">همه استان ها</li>
+                    <li class="p-2 hover:bg-gray-200 cursor-pointer">تهران</li>
+                    <li class="p-2 hover:bg-gray-200 cursor-pointer">خراسان رضوی</li>
+                    <li class="p-2 hover:bg-gray-200 cursor-pointer">اصفهان</li>
+                    <li class="p-2 hover:bg-gray-200 cursor-pointer">شیراز</li>
+                    <li class="p-2 hover:bg-gray-200 cursor-pointer">تبریز</li>
+                    <li class="p-2 hover:bg-gray-200 cursor-pointer">مازندران</li>
+                  </ul>
+                </div>
+              </div>
+            <div class="relative w-[321px] hidden lg:block" data-select-container>
+              <button class="w-full h-[50px] rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
+                <span class="text-gray-200 opacity-55" data-selected-option>همه دسته بندی ها</span>
+                <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
+              </button>
+              <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg mt-1 hidden z-[1000]" data-dropdown>
+                <input type="text" class="w-full p-2 border-b border-gray-300 focus:outline-none" data-search-input placeholder="جستجو...">
+                <ul class="max-h-60 overflow-auto" data-options-list>
+                  <li class="p-2 hover:bg-gray-200 cursor-pointer">همه دسته بندی ها</li>
+                  <li class="p-2 hover:bg-gray-200 cursor-pointer">وب , برنامه نویسی نرم افزار</li>
+                  <li class="p-2 hover:bg-gray-200 cursor-pointer">فروش و بازاریابی</li>
+                  <li class="p-2 hover:bg-gray-200 cursor-pointer">مالی و حسابداری</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="flex justify-center items-center w-screen lg:w-auto bg-yellow-100 p-3 rounded hover:bg-orange-300 cursor-pointer mt-3 lg:mt-0">
+              <input type="button" value="جست و جو در مشاغل" class=" text-gray-500  font-bold "/>
+            </div>
+            </div>
+          </div>
+          <a href="#" class="text-white font-bold flex justify-center items-center mt-3">
+            مشاهده همه اگهی های استخدام
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--    slider jobs-->
+    <section class="mt-3 container">
+      <div class="flex justify-center items-center">
+        <p>یک رزومه در جابینجا به <span class="text-blue-600">شرکت فناوران</span> ارسال شد.</p>
+      </div>
+
+      <div class="grid  grid-cols-12">
+        <div class="col-span-full ">
+          <div class="swiper myswiper ">
+            <div class=" ">
+              <button class="swiper-btn-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-3">
+                <i class="fa-solid fa-arrow-right fa-rotate-180"></i>
+              </button>
+              <button class="swiper-btn-next absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-3">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="swiper-wrapper mt-[30px] ">
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="/tailwind/public/images/main.png">
+                  <p class="text-[11px] text-gray-400">5 فرصت شغلی</p>
+                  <p class="text-[11px] text-blue-600">میزگرد نرم افزار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    چپ و راست-->
+    <section class="container">
+      <div class="lg:flex lg:gap-x-5">
+        <!-- right section -->
+         <!-- جستجوی پیشرفته -->
+        <div class="lg:w-1/4">
+
+          <!-- previous search -->
+          <div>
+            <div class="px-5 py-4 my-4 border border-slate-200 rounded-lg lg:px-8">
+              <h2 class="border-b  border-slate-200">جستجوهای پیشین</h2>
+              <div class=" overflow-x-auto py-4 flex lg:flex-col lg:gap-y-3 gap-x-2">
+                <form action="" class=" px-20 py-2 border border-slate-200 rounded-lg" >اتصال یکپارچه  
+                </form>
+                <form action="" class="px-20 py-2 border border-slate-200 rounded-lg">اتصال یکپارچه</form>
+                <form action="" class="px-20 py-2 border border-slate-200 rounded-lg">اتصال یکپارچه</form>
+                <form action="" class="px-20 py-2 border border-slate-200 rounded-lg" >اتصال یکپارچه</form>
+              </div>
+              <div class="flex justify-between border-t text-red-900 border-slate-200 py-4">
+                <p>حذف همه</p>
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+          </div>
+          <!-- resume section -->
+          <div class="px-5 py-4 my-4 border border-slate-200 rounded-lg lg:px-8">
+            <h2 class="border-b  border-slate-200">رزومه من</h2>
+            <div class="flex justify-center py-4">
+              <img class="rounded-full" width="80px" src="/tailwind/public/images/girl.jpeg" alt="">
+            </div>
+            <h2>فاخته پناه</h2>
+            <p class="text-gray-100">برنامه نویس</p>
+            <p>آخرین بروزرسانی</p>
+            <div class="flex justify-between items-center border-b border-slate-200 py-4">
+              <p>مشاهده و دریافت رزومه</p>
+              <i class="fa-solid fa-arrow-left text-gray-500"></i>
+            </div>
+            <div class="flex justify-between items-center py-4">
+                <p class="text-blue-100">تکمیل رزومه</p>
+                <i class="fa-solid fa-arrow-left text-gray-500"></i>
+            </div>
+          </div>
+          <!-- notifications section -->
+          <div class="px-5 py-4 border border-slate-200 rounded-lg lg:px-8">
+            <h2 class="border-b border-slate-200">ایمیل اطلاع رسانی شغلی</h2>
+            <div class="flex justify-center py-4">
+              <img class="rounded-full" width="80px" src="/tailwind/public/images/notification-bell-red_78370-6897.jpg.avif" alt="">
+            </div>
+            <p class="text-gray-500 py-2"> با انتخاب دسته بندی شغلی مورد نظر خود از نتایج جدید جستجو بلافاصله مطلع شوید.</p>
+            <div class="flex gap-1 border p-3 border-slate-200 rounded-lg">
+              <h3>ایمیل های فعلی شما:</h3>
+              <p>۱</p>
+            </div>
+            <div class="flex justify-between items-center border-b border-slate-200 py-4">
+              <p>مشاهده ایمیل های اطلاع رسانی</p>
+              <i class="fa-solid fa-arrow-left text-gray-500"></i>
+            </div>
+            <div class="flex justify-between items-center py-4">
+                <p class="text-blue-100">ایجاد ایمیل اطلاع رسانی جدید</p>
+                <i class="fa-solid fa-arrow-left text-gray-500"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- left section -->
+
+
+        <div class="lg:w-2/3">
+          <!-- آگهی -->
+          <div class="flex gap-4 lg:border-b md:border-0 border  my-4 rounded-lg lg:w-2/3 border-slate-200">
+            <button class="tab-button border-b-4  border-transparent border-green-700 py-4 px-6 active" data-tab="suggested">آگهی های پیشنهادی</button>
+            <button class="tab-button border-b-4 border-transparent  py-4 px-6" data-tab="saved">نشان شده‌ها</button>
+            <button class="tab-button border-b-4 border-transparent  py-4 px-6" data-tab="my-requests">درخواست‌های من</button>
+          </div>
+
+          <div>
+            <!-- پیشنهادی -->
+            <div class="tab-content " id="suggested">
+              <div class="rounded-lg border  border-slate-200 px-5 py-4 my-4">
+                <h2 class=" py-4">آگهی های پیشنهادی</h2>
+                <p class=" border-b border-b-slate-200 py-4 text-gray-500">بر اساس آخرین بازدید یا آخرین رزومه ارسالی شما نمایش داده می‌شوند.</p>
+                <div class="">
+                  <ul class="flex flex-col">
+                    <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                      <div class="lg:flex">
+                        <div class=" flex justify-center">
+                          <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                        </div>
+                        <div>
+                          <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                          <div class=" flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-regular fa-building"></i>
+                            <span class="text-gray-500">ساختمان هوشمند</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="text-gray-500">خراسان رضوی</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span class="text-gray-500">قرارداد تمام وقت</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                        <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                        <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                          <i class="fa-regular fa-star"></i>
+                          <p>نشان کردن</p>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                      <div class="lg:flex">
+                        <div class=" flex justify-center">
+                          <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                        </div>
+                        <div>
+                          <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                          <div class=" flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-regular fa-building"></i>
+                            <span class="text-gray-500">ساختمان هوشمند</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="text-gray-500">خراسان رضوی</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span class="text-gray-500">قرارداد تمام وقت</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                        <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                        <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                          <i class="fa-regular fa-star"></i>
+                          <p>نشان کردن</p>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                      <div class="lg:flex">
+                        <div class=" flex justify-center">
+                          <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                        </div>
+                        <div>
+                          <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                          <div class=" flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-regular fa-building"></i>
+                            <span class="text-gray-500">ساختمان هوشمند</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="text-gray-500">خراسان رضوی</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span class="text-gray-500">قرارداد تمام وقت</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                        <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                        <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                          <i class="fa-regular fa-star"></i>
+                          <p>نشان کردن</p>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                      <div class="lg:flex">
+                        <div class=" flex justify-center">
+                          <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                        </div>
+                        <div>
+                          <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                          <div class=" flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-regular fa-building"></i>
+                            <span class="text-gray-500">ساختمان هوشمند</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="text-gray-500">خراسان رضوی</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span class="text-gray-500">قرارداد تمام وقت</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                        <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                        <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                          <i class="fa-regular fa-star"></i>
+                          <p>نشان کردن</p>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                      <div class="lg:flex">
+                        <div class=" flex justify-center">
+                          <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                        </div>
+                        <div>
+                          <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                          <div class=" flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-regular fa-building"></i>
+                            <span class="text-gray-500">ساختمان هوشمند</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="text-gray-500">خراسان رضوی</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span class="text-gray-500">قرارداد تمام وقت</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                        <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                        <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                          <i class="fa-regular fa-star"></i>
+                          <p>نشان کردن</p>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                      <div class="lg:flex">
+                        <div class=" flex justify-center">
+                          <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                        </div>
+                        <div>
+                          <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                          <div class=" flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-regular fa-building"></i>
+                            <span class="text-gray-500">ساختمان هوشمند</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="text-gray-500">خراسان رضوی</span>
+                          </div>
+                          <div class="flex gap-x-2 items-center text-gray-500">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span class="text-gray-500">قرارداد تمام وقت</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                        <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                        <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                          <i class="fa-regular fa-star"></i>
+                          <p>نشان کردن</p>
+                        </button>
+                      </div>
+                    </li>                
+                  </ul>
+                </div>
+              </div>
+            </div>
+           </div>
+           <!-- نشان شده ها -->
+            <div>
+              <div class="tab-content hidden  " id="saved">
+                <div class="rounded-lg border border-slate-200 px-5 py-4 my-4">
+                  <h2 class=" py-4">نشان شده ها</h2>
+                  <p class=" border-b border-b-slate-200 py-4 text-gray-500">بر اساس آخرین بازدید یا آخرین رزومه ارسالی شما نمایش داده می‌شوند.</p>
+                  <div class="">
+                    <ul class="flex flex-col">
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>                
+                    </ul>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+            <!-- درخواست -->
+             <div>
+              <div class="tab-content  hidden "  id="my-requests">
+                <div class="rounded-lg border border-slate-200 px-5 py-4 my-4">
+                  <h2 class=" py-4">درخواست های من</h2>
+                  <p class="border-b border-b-slate-200 py-4 text-gray-500">بر اساس آخرین بازدید یا آخرین رزومه ارسالی شما نمایش داده می‌شوند.</p>
+                  <div class="">
+                    <ul class="flex flex-col">
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-4 lg:items-center  border-b border-slate-200">
+                        <div class="lg:flex">
+                          <div class=" flex justify-center">
+                            <img width="100px"  src="/tailwind/public/images/elearning_image.jpg"  alt="">
+                          </div>
+                          <div>
+                            <h1 class="text-blue-100">برنامه نویس فرانت</h1>
+                            <div class=" flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-regular fa-building"></i>
+                              <span class="text-gray-500">ساختمان هوشمند</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="text-gray-500">خراسان رضوی</span>
+                            </div>
+                            <div class="flex gap-x-2 items-center text-gray-500">
+                              <i class="fa-solid fa-file-signature"></i>
+                              <span class="text-gray-500">قرارداد تمام وقت</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex flex-col justify-center gap-y-3 py-5 ">
+                          <button class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10">ارسال رزومه</button>
+                          <button class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border border-slate-200 lg:px-10">
+                            <i class="fa-regular fa-star"></i>
+                            <p>نشان کردن</p>
+                          </button>
+                        </div>
+                      </li>                
+                    </ul>
+                  </div>
+                </div>
+              </div>
+             </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--    لیست مشاغل-->
+    <section class="container">
+      <div class="flex justify-center items-center border-b lg:mx-20 border-slate-200">
+        <p>لیست مشاغل جابینجا</p>
+      </div>
+
+      <div class="flex flex-row justify-around items-center mt-12 lg:mx-20 border-b border-slate-200">
+        <!-- col1 -->
+        <div class="flex flex-col mb-12">
+          <a class="font-bold">جستجو‌های پرطرفدار</a>
+          <a class="text-gray-400">ادمین</a>
+          <a class="text-gray-400  ">برنامه‌نویس</a>
+          <a class="text-gray-400  ">حسابدار</a>
+          <a class="text-gray-400 hidden more-items">طراح UI/UX</a>
+          <a class="text-gray-400 hidden more-items">کارشناس فروش</a>
+        </div>
+        <!-- col2 -->
+        <div class="flex flex-col mb-12">
+          <a class="font-bold">براساس استان</a>
+          <a class="text-gray-400">تهران</a>
+          <a class="text-gray-400  ">مشهد</a>
+          <a class="text-gray-400  ">اصفهان</a>
+          <a class="text-gray-400 hidden more-items">شیراز</a>
+          <a class="text-gray-400 hidden more-items">تبریز</a>
+        </div>
+        <!-- col3 -->
+        <div class="flex flex-col mb-12">
+          <a class="font-bold">براساس دسته بندی</a>
+          <a class="text-gray-400">وب , برنامه نویسی و نرم افزار</a>
+          <a class="text-gray-400  ">مارکتینگ</a>
+          <a class="text-gray-400  ">مدیریت</a>
+          <a class="text-gray-400 hidden more-items">پشتیبانی</a>
+          <a class="text-gray-400 hidden more-items">تحلیل داده</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center items-center mt-4">
+        <button id="toggleButton" class="text-blue-500">موارد بیشتر</button>
+        <div><i class="fa-solid fa-angle-down text-blue-400"></i></div>
+      </div>
+    </section>
+
+
+    <!--  اشنایی با شرکت ها-->
+    <section class="mt-12 container">
+      <div class=" flex justify-between m-5 border-b border-slate-200 pb-2 lg:mx-20  ">
+        <p class="text-gray-200 font-bold text-[16px]">آشنایی با شرکت‌ها</p>
+        <button class="text-blue-100 font-bold">مشاهده همه  <i class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
+      </div>
+      <div class="grid  grid-cols-12">
+        <div class="col-span-full ">
+          <div class="swiper myswiper1 ">
+            <div class="swiper-wrapper mt-[30px] mb-12">
+              <div class="swiper-slide">
+                <div class="flex justify-center items-center flex-col gap-2 p-5 m-5 border border-slate-200 rounded-md ">
+                  <div class="flex justify-start items-center ">
+                    <img src="/tailwind/public/images/main_2.png" class="w-14 h-14">
+                    <div class="mr-4">
+                      <a href="#" class="text-gray-200 font-bold">دیدار</a>
+                      <p class="">کامپیوتر , فناوری اطلاعات و اینترنت</p>
+                    </div>
+                  </div>
+                  <img class="rounded flex w-[326px] h-[223px]" src="/tailwind/public/images/main1.jpg" alt="">
+                  <p class="text-gray-50 mt-5 pb-5 border-b border-slate-200 ">نقش منابع انسانی در توسعه سازمان بر کسی پوشیده نیست. سازمان‌هایی رشد می‌کنند و به موفقیت می‌رسند که سرمایه‌های انسانی مناسبی در اختیار داشته باشند. در مدیریت منابع انسانی (HRM) تلاش می‌شود با ایجاد خط‌مشی‌ها و </p>
+                  <div class="flex flex-col  border-b border-slate-200 p-2">
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">9</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200 ">محبوبیت میان کارجویان</p>
+                      </div>
+                    </div>
+
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">8</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200">تعداد و تنوع فرصت شغلی</p>
+                      </div>
+                    </div>
+
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">10</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200 ">بررسی رزومه های دریافتی</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex ">
+                    <a href="#" class="bg-green-700 text-green-800">12 شغل فعال</a>
+                    <a href="#" class="text-blue-100 font-bold"> صفحه شرکت <i class="fa-solid fa-arrow-right fa-rotate-180"></i></a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex justify-center items-center flex-col gap-2 p-5 m-5 border border-slate-200 rounded-md ">
+                  <div class="flex justify-start items-center ">
+                    <img src="/tailwind/public/images/main_2.png" class="w-14 h-14">
+                    <div class="mr-4">
+                      <a href="#" class="text-gray-200  font-bold">دیدار</a>
+                      <p class="">کامپیوتر , فناوری اطلاعات و اینترنت</p>
+                    </div>
+                  </div>
+                  <img class="rounded flex w-[326px] h-[223px]" src="/tailwind/public/images/main1.jpg" alt="">
+                  <p class="text-gray-50 mt-5 pb-5 border-b border-slate-200">نقش منابع انسانی در توسعه سازمان بر کسی پوشیده نیست. سازمان‌هایی رشد می‌کنند و به موفقیت می‌رسند که سرمایه‌های انسانی مناسبی در اختیار داشته باشند. در مدیریت منابع انسانی (HRM) تلاش می‌شود با ایجاد خط‌مشی‌ها و </p>
+                  <div class="flex flex-col  border-b border-slate-200 p-2">
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">9</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200 ">محبوبیت میان کارجویان</p>
+                      </div>
+                    </div>
+
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">8</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200 ">تعداد و تنوع فرصت شغلی</p>
+                      </div>
+                    </div>
+
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">10</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200">بررسی رزومه های دریافتی</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between">
+                    <a href="#" class="bg-green-700 text-green-800">12 شغل فعال</a>
+                    <a href="#" class="text-blue-100 font-bold"> صفحه شرکت <i class="fa-solid fa-arrow-right fa-rotate-180"></i></a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex justify-center items-center flex-col gap-2 p-5 m-5 border border-slate-200 rounded-md ">
+                  <div class="flex justify-start items-center ">
+                    <img src="/tailwind/public/images/main_2.png" class="w-14 h-14">
+                    <div class="mr-4">
+                      <a href="#" class="text-gray-200 font-bold">دیدار</a>
+                      <p class="">کامپیوتر , فناوری اطلاعات و اینترنت</p>
+                    </div>
+                  </div>
+                  <img class="rounded flex w-[326px] h-[223px]" src="/tailwind/public/images/main1.jpg" alt="">
+                  <p class="text-gray-50 mt-5 pb-5 border-b border-slate-200 ">نقش منابع انسانی در توسعه سازمان بر کسی پوشیده نیست. سازمان‌هایی رشد می‌کنند و به موفقیت می‌رسند که سرمایه‌های انسانی مناسبی در اختیار داشته باشند. در مدیریت منابع انسانی (HRM) تلاش می‌شود با ایجاد خط‌مشی‌ها و </p>
+                  <div class="flex flex-col  border-b border-slate-200 p-2">
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">9</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200 ">محبوبیت میان کارجویان</p>
+                      </div>
+                    </div>
+
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">8</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200">تعداد و تنوع فرصت شغلی</p>
+                      </div>
+                    </div>
+
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">10</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200">بررسی رزومه های دریافتی</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between">
+                    <a href="#" class="bg-green-700 text-green-800">12 شغل فعال</a>
+                    <a href="#" class="text-blue-100 font-bold"> صفحه شرکت <i class="fa-solid fa-arrow-right fa-rotate-180"></i></a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="flex flex-col justify-center items-center gap-2 p-5 m-5 border rounded-md ">
+                  <div class="flex justify-start items-center ">
+                    <img src="/tailwind/public/images/main_2.png" class="w-14 h-14">
+                    <div class="mr-4">
+                      <a href="#" class="text-gray-200 font-bold">دیدار</a>
+                      <p class="">کامپیوتر , فناوری اطلاعات و اینترنت</p>
+                    </div>
+                  </div>
+                  <img class="rounded flex w-[326px] h-[223px]" src="/tailwind/public/images/main1.jpg" alt="">
+                  <p class="text-gray-50 mt-5 pb-5 border-b ">نقش منابع انسانی در توسعه سازمان بر کسی پوشیده نیست. سازمان‌هایی رشد می‌کنند و به موفقیت می‌رسند که سرمایه‌های انسانی مناسبی در اختیار داشته باشند. در مدیریت منابع انسانی (HRM) تلاش می‌شود با ایجاد خط‌مشی‌ها و </p>
+                  <div class="flex flex-col  border-b p-2">
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">9</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200 ">محبوبیت میان کارجویان</p>
+                      </div>
+                    </div>
+
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">8</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200 ">تعداد و تنوع فرصت شغلی</p>
+                      </div>
+                    </div>
+
+                    <div class="flex  ">
+                      <div class="bg-green-700 p-1 rounded">
+                        <span class="text-green-950 font-bold">10</span>
+                      </div>
+                      <div>
+                        <p class="text-gray-200">بررسی رزومه های دریافتی</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between">
+                    <a href="#" class="bg-green-700 text-green-800">12 شغل فعال</a>
+                    <a href="#" class="text-blue-100 font-bold"> صفحه شرکت <i class="fa-solid fa-arrow-right fa-rotate-180"></i></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination "></div>
+          </div>
+        </div>
+      </div>
+      <!--      <div class="flex flex-col lg:flex lg:flex-row lg:mx-20">-->
+      <!--      </div>-->
+
+    </section>
+
+    <!-- blog section  -->
+    <section class="container">
+
+        <div class="border-b border-slate-200 flex justify-between m-5 pb-2 lg:mx-20">
+            <p>از وبلاگ جابینجا</p>
+            <button>مشاهده همه</button>
+        </div>
+        <div class="flex flex-col lg:flex lg:flex-row lg:mx-20">
+            <div class="flex flex-col gap-2 p-5 m-5 border border-slate-200 rounded-md items-center">
+                <img class="rounded flex" src="/tailwind/public/images/https___blog.jobinja.ir_wp-content_uploads_2024_10_نقش-منابع-انسانی-در-توسعه-سازمان.webp" alt="">
+                <h2 class="font-bold">بررسی نقش منابع انسانی در توسعه سازمان</h2>
+                <p>نقش منابع انسانی در توسعه سازمان بر کسی پوشیده نیست. سازمان‌هایی رشد می‌کنند و به موفقیت می‌رسند که سرمایه‌های انسانی مناسبی در اختیار داشته باشند. در مدیریت منابع انسانی (HRM) تلاش می‌شود با ایجاد خط‌مشی‌ها و </p>
+                <button>مشاهده بیشتر</button>
+            </div>
+            <div class="flex flex-col gap-2 p-5 m-5 border border-slate-200 rounded-md items-center">
+                <img class="rounded" src="/tailwind/public/images/https___blog.jobinja.ir_wp-content_uploads_2024_10_تکنیک_های-ارزیابی-عملکرد-کارکنان.webp" alt="">
+                <h2 class="font-bold">
+                    تکنیک‌های ارزیابی عملکرد کارکنان</h2>
+                    <p>هر سازمانی برای دستیابی به موفقیت بلندمدت باید نیروی کار موثر را جذب و حفظ کند. برای حفظ نیروی انسانی باید رضایت شغلی کارکنان بهبود یابد. کسب‌وکارهای پیشرو با استفاده از تکنیک‌های ارزیابی عملکرد کارکنان به‌طور متناسب به نیروهای انسانی پاداش و مزایا می‌دهند تا امکان حفظ </p>
+                <button>مشاهده بیشتر</button>
+            </div>
+            <div class="flex flex-col gap-2 p-5 m-5 border border-slate-200  rounded-md items-center">
+                <img class="rounded" src="/tailwind/public/images/https___blog.jobinja.ir_wp-content_uploads_2024_08_تکنیک_های-مصاحبه-شغلی.webp" alt="">
+                <h2 class="font-bold">آموزش تکنیک‌های مصاحبه شغلی برای مدیران منابع انسانی</h2>
+                <p>جذب و استخدام نیروی انسانی کارآمد از مهمترین وظایف مدیران منابع انسانی است. مدیران واحد HR در هر سازمانی باید بهترین شیوه‌ها را برای مصاحبه شغلی به کار گیرند تا مستعدترین نیروها را شناسایی و از آنان در سازمان استفاده  </p>
+                <button>مشاهده بیشتر</button>
+            </div>
+        </div>
+
+    </section>
+
+
+<!--  فوتر-->
+  <section class="bg-gray-100 ">
+    <div class="container flex flex-col lg:flex-row lg:justify-evenly lg:items-baseline p-12">
+      <div class="flex flex-col ">
+        <div class="flex items-baseline p-4">
+          <p class="border-b text-gray-300 text-right ml-1.5">کارجویان</p>
+          <img src="/tailwind/public/images/Vector.png " class="flex lg:hidden w-2 h-2 transition-transform duration-300" id="arrow"/>
+        </div>
+        <div class="hidden lg:block" id="menu1">
+          <div><a class="text-white">سوالات متداول کارجویان</a></div>
+          <div><a  class="text-white">قوانین و مقررات کارجویان</a></div>
+          <div><a  class="text-white">لیست مشاغل</a></div>
+          <div><a  class="text-white">آگهی استخدام</a></div>
+          <div><a  class="text-white">ایمیل های اطلاع رسانی</a></div>
+          <div><a  class="text-white">رزومه ساز آنلاین</a></div>
+          <div><a  class="text-white">آشنایی با شرکت ها</a></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="flex  items-baseline p-4">
+          <p class="border-b text-gray-300 text-right ml-1.5">میانبرها</p>
+          <img src="/tailwind/public/images/Vector.png " class="flex lg:hidden w-2 h-2 transition-transform duration-300" id="arrow1"/>
+        </div>
+        <div class="hidden lg:block" id="menu2">
+          <div><a  class="text-white">درخواست های من</a></div>
+          <div><a  class="text-white">ایمیل های اطلاع رسانی من</a></div>
+          <div><a  class="text-white">رزومه ساز</a></div>
+          <div><a  class="text-white">مشاهده رزومه</a></div>
+          <div><a  class="text-white">تنظیمات حساب کاربری</a></div>
+          <div><a  class="text-white">فرصت های شغلی پیشنهادی من</a></div>
+          <div><a  class="text-white">آشنایی با شرکت ها</a></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="flex  items-baseline p-4">
+          <p class="border-b text-gray-300 text-right ml-1.5">جابینجا</p>
+          <img src="/tailwind/public/images/Vector.png " class="flex lg:hidden w-2 h-2 transition-transform duration-300" id="arrow2"/>
+        </div>
+
+        <div class="hidden lg:block" id="menu3">
+          <div><a  class="text-white">تماس با جابینجا</a></div>
+          <div><a  class="text-white">جابینجا در رسانه ها</a></div>
+          <div><a  class="text-white">راهنمای استفاده برای کارجویان</a></div>
+          <div><a  class="text-white">وبلاگ</a></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <div class="flex  items-center">
+          <p class="border-b text-gray-300 text-right ml-1.5 hidden lg:block">جابینجا در شبکه های اجتماعی</p>
+        </div>
+        <ul class="flex flex-col justify-center items-center  ">
+          <li>
+            <div class="flex gap-4 justify-center mt-5">
+              <div><img class="w-10 h-10" src='/tailwind/public/images/1_Instagram_colored_svg_1-512.webp'></div>
+              <div><img class="w-10 h-10" src='/tailwind/public/images/Logo_of_Twitter.svg.png'></div>
+              <div><img class="w-10 h-10 rounded-3xl" src='/tailwind/public/images/images.jpg'></div>
+              <div><img class="w-10 h-10" src="/tailwind/public/images/LinkedIn_icon.svg.webp"/></div>
+            </div>
+          </li>
+          <div><img class="w-12 h-8 my-10" src="/tailwind/public/images/logo-gray.webp"/></div>
+          <div><p class="text-gray-300 text-right max-w-80 flex justify-center items-center lg:block">با معتبرترین شرکت‌های کشور آشنا شوید و محل کار آینده خود را هوشمندانه انتخاب کنید.</p></div>
+        </ul>
+      </div>
+
+    </div>
+    <div class="text-white flex justify-center">© ۱۴۰۳ - تمامی حقوق برای جابینجا محفوظ است.</div>
+  </section>
+
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/tailwind/pages/index.js"></script>
+
+
+
+</html>
