@@ -4,6 +4,9 @@ const btn = document.getElementById("btn");
 const listButton = document.getElementById("listButton");
 const buttons = document.querySelectorAll('button');
 const contents = document.querySelectorAll('.content');
+const dropButton = document.getElementById('dropButton');
+const dropdownCity = document.getElementById('dropdownCity');
+const items = document.querySelectorAll('.items');
 
 // tabs left part
 document.addEventListener("DOMContentLoaded", function () {
@@ -23,6 +26,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// city dropdown 
+dropButton.addEventListener('click', () => {
+    dropdownCity.classList.toggle('hidden');
+});
+items.forEach(item => {
+    item.addEventListener('click', (event) => {
+        event.preventDefault();
+        items.forEach(i => i.classList.remove('bg-blue-100'));
+        item.classList.add('bg-blue-100');
+        dropButton.textContent = item.textContent;
+        // dropdownCity.classList.add('hidden');
+    });
+    
+
+});
+// document.addEventListener('click', (event) => {
+//     if (!dropButton.contains(event.target) && !dropButton.contains(event.target)) {
+//         dropdownCity.classList.add('hidden');
+//     }
+// });
+
+//menu dropdown
 
 menuButton.addEventListener("click", () => {
     dropdownMenu.classList.toggle("hidden");
