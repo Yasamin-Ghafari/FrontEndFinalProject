@@ -26,21 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// city dropdown 
-dropButton.addEventListener('click', () => {
-    dropdownCity.classList.toggle('hidden');
-});
-items.forEach(item => {
-    item.addEventListener('click', (event) => {
-        event.preventDefault();
-        items.forEach(i => i.classList.remove('bg-blue-100'));
-        item.classList.add('bg-blue-100');
-        dropButton.textContent = item.textContent;
-        // dropdownCity.classList.add('hidden');
-    });
-    
-
-});
+// city dropdown
+// dropButton.addEventListener('click', () => {
+//     dropdownCity.classList.toggle('hidden');
+// });
+// items.forEach(item => {
+//     item.addEventListener('click', (event) => {
+//         event.preventDefault();
+//         items.forEach(i => i.classList.remove('bg-blue-100'));
+//         item.classList.add('bg-blue-100');
+//         dropButton.textContent = item.textContent;
+//         // dropdownCity.classList.add('hidden');
+//     });
+//
+//
+// });
 // document.addEventListener('click', (event) => {
 //     if (!dropButton.contains(event.target) && !dropButton.contains(event.target)) {
 //         dropdownCity.classList.add('hidden');
@@ -75,30 +75,30 @@ window.addEventListener('click', (e) => {
 
 
 // footer click vector for responsive
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleMenus = [
-        { buttonId: "arrow", menuId: "menu1" },
-        { buttonId: "arrow1", menuId: "menu2" },
-        { buttonId: "arrow2", menuId: "menu3" },
-        { buttonId: "arrow3", menuId: "menu4" },
-        { buttonId: "arrow4", menuId: "menu5" },
-        { buttonId: "arrow5", menuId: "menu6" },
-    ];
-
-    toggleMenus.forEach(({ buttonId, menuId }) => {
-        const button = document.getElementById(buttonId);
-        const menu = document.getElementById(menuId);
-
-        button.addEventListener("click", function () {
-            if (window.innerWidth < 1024) {
-                menu.classList.toggle("hidden");
-                const isRotated = button.style.transform === "rotate(180deg)";
-                button.style.transform = isRotated ? "rotate(0deg)" : "rotate(180deg)";
-                button.style.transition = "transform 0.3s ease-in-out";
-            }
-        });
-    });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     const toggleMenus = [
+//         { buttonId: "arrow", menuId: "menu1" },
+//         { buttonId: "arrow1", menuId: "menu2" },
+//         { buttonId: "arrow2", menuId: "menu3" },
+//         { buttonId: "arrow3", menuId: "menu4" },
+//         { buttonId: "arrow4", menuId: "menu5" },
+//         { buttonId: "arrow5", menuId: "menu6" },
+//     ];
+//
+//     toggleMenus.forEach(({ buttonId, menuId }) => {
+//         const button = document.getElementById(buttonId);
+//         const menu = document.getElementById(menuId);
+//
+//         button.addEventListener("click", function () {
+//             if (window.innerWidth < 1024) {
+//                 menu.classList.toggle("hidden");
+//                 const isRotated = button.style.transform === "rotate(180deg)";
+//                 button.style.transform = isRotated ? "rotate(0deg)" : "rotate(180deg)";
+//                 button.style.transition = "transform 0.3s ease-in-out";
+//             }
+//         });
+//     });
+// });
 
 
 new Swiper('.myswiper',{
@@ -163,7 +163,7 @@ new Swiper('.myswiper1',{
         const selectedOption = selectContainer.querySelector("[data-selected-option]");
         const searchInput = selectContainer.querySelector("[data-search-input]");
         const optionsList = selectContainer.querySelector("[data-options-list]").getElementsByTagName("li");
-    
+
         selectBtn.addEventListener("click", (e) => {
             e.preventDefault();
             dropdown.classList.toggle("hidden");
@@ -171,18 +171,18 @@ new Swiper('.myswiper1',{
             filterOptions("", optionsList);
             searchInput.focus();
         });
-    
+
         Array.from(optionsList).forEach(option => {
             option.addEventListener("click", () => {
                 selectedOption.textContent = option.textContent;
                 dropdown.classList.add("hidden");
             });
         });
-    
+
         searchInput.addEventListener("input", (e) => {
             filterOptions(e.target.value, optionsList);
         });
-    
+
         function filterOptions(searchText, options) {
             Array.from(options).forEach(option => {
                 if (option.textContent.includes(searchText)) {
@@ -192,14 +192,14 @@ new Swiper('.myswiper1',{
                 }
             });
         }
-    
+
         document.addEventListener("click", (e) => {
             if (!selectBtn.contains(e.target) && !dropdown.contains(e.target)) {
                 dropdown.classList.add("hidden");
             }
         });
     }
-    
+
     document.querySelectorAll("[data-select-container]").forEach(setupSearchableSelect);
 
 
@@ -233,3 +233,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
