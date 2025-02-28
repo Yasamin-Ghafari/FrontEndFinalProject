@@ -562,7 +562,7 @@
         <div class="relative h-auto group  bg-blue-400 bg-opacity-10">
           <div class="p-10">
             <div class="flex flex-col">
-              <div class="flex gap-x-4 mb-4">
+              <div class="flex lg:flex-row flex-col gap-x-4 mb-4">
                 <div class="flex flex-col ">
                   <span class="text-gray-500">عنوان شغلی(سمت)</span>
                   <input type="text" class="h-14 w-64"/>
@@ -574,7 +574,7 @@
               </div>
               <div class="flex-col justify-around">
                   <span  class="flex  text-gray-500">تاریخ اشتغال</span>
-                  <div class="flex items-baseline gap-x-4 mb-4">
+                  <div class="flex lg:flex-row flex-col  lg:items-baseline gap-x-4 mb-4">
                     <span class="text-gray-500">از</span>
                     <select class="h-14 w-64 text-gray-500">
                       <option class="text-gray-500">ماه شروع همکاری</option>
@@ -584,7 +584,7 @@
                     <input type="text" class="h-14 w-64" placeholder="سال شروع همکاری"/>
                   </div>
 
-                  <div class="flex items-baseline gap-x-4 mb-4">
+                  <div class="flex  lg:flex-row flex-col lg:items-baseline gap-x-4 mb-4">
                     <span class="text-gray-500">تا</span>
                     <select class="h-14 w-64 text-gray-500">
                       <option class="text-gray-500">ماه پایان همکاری</option>
@@ -592,8 +592,11 @@
                       <option class="text-gray-500">اردیبهشت</option>
                     </select>
                     <input type="text" class="h-14 w-64" placeholder="سال پایان همکاری"/>
-                    <input type="checkbox" id="checkbox_jobs"/>
-                    <label class="text-gray-500" for="checkbox_jobs">هنوز مشغولم</label>
+                    <div class="mt-3">
+                      <input type="checkbox" id="checkbox_jobs"/>
+                      <label class="text-gray-500" for="checkbox_jobs">هنوز مشغولم</label>
+                    </div>
+
 
                   </div>
                 <div class="flex flex-col">
@@ -663,7 +666,7 @@
         <div class="relative h-auto group  bg-blue-400 bg-opacity-10">
           <div class="p-10">
             <div class="flex flex-col">
-              <div class="flex gap-x-4 mb-4">
+              <div class="flex lg:flex-row flex-col gap-x-4 mb-4">
                 <div class="flex flex-col ">
                   <span class="text-gray-500">رشته تحصیلی</span>
                   <input type="text" class="h-14 w-64"/>
@@ -676,7 +679,7 @@
               <div class="flex-col justify-around ">
                 <div class="flex flex-col gap-y-4">
                   <span  class="flex  text-gray-500">مقطع تحصیلی</span>
-                  <div class="flex items-baseline gap-x-4 mb-4">
+                  <div class="flex flex-wrap items-baseline gap-x-4 mb-4">
                     <div>
                       <input type="checkbox" id="diploma"/>
                       <label for="diploma" class="text-gray-500">دیپلم</label>
@@ -708,15 +711,19 @@
               </div>
               <div class="flex flex-col  gap-4 mb-4">
                 <span class="text-gray-500">تاریخ شروع و پایان تحصیل</span>
-                <div class="flex items-baseline gap-4">
+                <div class="flex lg:flex-row flex-col lg:items-baseline gap-4">
                   <span class="text-gray-500"> از سال </span>
                   <input type="text" class="h-14 w-64" />
                 </div>
-                <div class="flex items-baseline gap-4">
+                <div class="flex lg:flex-row flex-col  lg:items-baseline  gap-4">
                   <span class="text-gray-500"> تا سال </span>
                   <input type="text" class="h-14 w-64" placeholder="سال فارغ التحصیلی" />
-                  <input type="checkbox" id="edge_id"/>
-                  <label class="text-gray-500">هنوز مشغول به تحصیلم</label>
+                 
+                  <div class="mt-3">
+                    <input type="checkbox" id="edge_id"/>
+                    <label class="text-gray-500">هنوز مشغول به تحصیلم</label>
+                  </div>
+
                 </div>
 
 
@@ -783,7 +790,7 @@
         <div class="relative h-auto group  bg-blue-400 bg-opacity-10">
           <div class="p-10">
             <div class="flex flex-col">
-              <div class="flex gap-x-4 mb-4">
+              <div class="flex lg:flex-row flex-col gap-x-4 mb-4">
                 <div class="flex flex-col ">
                   <span class="text-gray-500">نام زبان</span>
                   <select class="h-14 w-64 text-gray-500">
