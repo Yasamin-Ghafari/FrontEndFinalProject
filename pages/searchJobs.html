@@ -153,20 +153,20 @@
 
   <!--  blue part جست و جو مشاغل-->
   <section class="container  ">
-    <div class=" py-12 bg-blue-100 z-10 shadow-lg rounded-lg  h-auto flex my-5 flex-col items-center justify-center">
+    <div class=" py-12 bg-blue-100 z-10 shadow-lg rounded-lg  h-auto flex flex-col items-center justify-center">
       <div class=" ">
         <div class="flex flex-col lg:flex-row lg:gap-x-2 justify-center items-center">
-          <div class="relative w-[340px] lg:w-[280px]">
+          <div class="relative">
             <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
             <input type="text" placeholder="عنوان شغلی، نام شرکت، مهارت یا..."
-                   class="rounded w-full h-[50px] px-12 bg-white font-bold text-right"/>
+                   class="rounded w-full h-12 px-12 bg-white font-bold text-right"/>
           </div>
 
           <div class="hidden lg:flex lg:gap-x-2">
-            <div class="relative w-[280px] hidden lg:block" data-select-container>
-              <button class="relative w-full h-[50px] rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
+            <div class="relative hidden lg:block" data-select-container>
+              <button class="relative w-full h-12 rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
                 <i class="fa-solid fa-location-dot absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                <span class="text-gray-200 opacity-55 pr-12" data-selected-option>همه استان ها</span>
+                <span class="text-gray-200 opacity-55 px-12" data-selected-option>همه استان ها</span>
                 <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
               </button>
               <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg my-1 hidden z-[1000]" data-dropdown>
@@ -182,13 +182,13 @@
                 </ul>
               </div>
             </div>
-            <div class="relative w-[280px] hidden lg:block" data-select-container>
-              <button class="relative w-full h-[50px] rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
+            <div class="relative w-2xs hidden lg:block" data-select-container>
+              <button class="relative w-full h-12 rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
                 <i class="fa-solid fa-bars absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                <span class="text-gray-200 opacity-55 pr-12" data-selected-option>همه دسته بندی ها</span>
+                <span class="text-gray-200 opacity-55 px-12" data-selected-option>همه دسته بندی ها</span>
                 <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
               </button>
-              <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg mt-1 hidden z-[1000]" data-dropdown>
+              <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg my-1 hidden z-[1000]" data-dropdown>
                 <input type="text" class="w-full p-2 border-b border-gray-300 focus:outline-none" data-search-input placeholder="جستجو...">
                 <ul class="max-h-60 overflow-auto" data-options-list>
                   <li class="p-2 hover:bg-gray-200 cursor-pointer">همه دسته بندی ها</li>
@@ -325,7 +325,7 @@
 
     <!--    جست و جو مشاغل pagination-->
   <section class="container">
-    <div class="hidden flex-row-reverse lg:flex justify-center items-center space-x-2 mt-12 mb-12">
+    <div class="hidden flex-row-reverse lg:flex justify-center items-center space-x-2 py-12">
       <button class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200">1</button>
       <button class="px-4 py-2 border rounded-lg bg-blue-200 text-white">2</button>
       <button class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200">3</button>
@@ -412,7 +412,7 @@
     </div>
 
   </div>
-  <div class="text-white pb-5 flex justify-center">© ۱۴۰۳ - تمامی حقوق برای جابینجا محفوظ است.</div>
+  <div class="text-white pb-4 py-1 flex justify-center">© ۱۴۰۳ - تمامی حقوق برای جابینجا محفوظ است.</div>
 </section>
 </body>
 <script src="/script/index.js"></script>
