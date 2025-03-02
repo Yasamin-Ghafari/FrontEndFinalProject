@@ -12,7 +12,7 @@
 
  <!-- header -->
  <section class="bg-gray-200">
-  <div class="container  w-full  p-4 flex justify-center  items-center">
+  <div class="container w-full z-10 p-4 flex justify-between  items-center">
     <!-- mobile -->
     <div>
       <button id="menuButton" class="px-3 py-2 bg-gray-100 text-white rounded lg:hidden"><i class="fa-sharp fa-solid fa-bars"></i></button>
@@ -21,31 +21,31 @@
         class="hidden absolute bg-gray-200 p-3 w-full my-4 right-0 border border-t-slate-100 lg:hidden"
       >
           <li class="flex hover:bg-gray-100  p-4 gap-2.5 bg-gray-200 border border-b-gray-300">
-            <a class="flex">
+            <a class="flex" href="/">
               <i class="fa-solid fa-house text-yellow-300 px-2"></i>
               <span class="text-white">خانه</span>
             </a>
           </li>
           <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
-            <a class="flex">
+            <a class="flex" href="/">
               <i class="fa-solid fa-magnifying-glass text-yellow-300 px-2 "></i>
               <span class="text-white">جستجوی مشاغل</span>
             </a>
           </li>
           <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
-            <a class="flex">
+            <a class="flex" href="/">
               <i class="fa-regular fa-star text-yellow-300 px-2"></i>
               <span class="text-white">رزومه ساز</span>
             </a>
           </li>
           <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
-            <a class="flex">
+            <a class="flex" href="/">
               <i class="fa-regular fa-gem text-yellow-300 px-2"></i>
               <span class="text-white">۵۰ شرکت برتر</span>
             </a>
           </li>
           <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
-            <a class="flex">
+            <a class="flex" href="/">
               <i class="fa-regular fa-building text-yellow-300 px-2"></i>
               <span class="text-white">بخش کارفرمایان</span>
             </a>
@@ -55,7 +55,7 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </a>
     </div>
-    <div class="font-bold text-2xl text-white lg:hidden">jobinja</div>
+    <div class="font-bold text-2xl text-white lg:hidden"><a href="/">jobinja</a></div>
     <div class="lg:hidden">
      <a class="text-gray-300 p-2">
       <i class="fa-regular fa-bell"></i>
@@ -153,13 +153,13 @@
 
   <!--  blue part جست و جو مشاغل-->
   <section class="container  ">
-    <div class=" py-12 bg-blue-100  shadow-lg rounded-lg  h-auto flex my-5 flex-col items-center justify-center">
+    <div class=" py-12 bg-blue-100 z-10 shadow-lg rounded-lg  h-auto flex my-5 flex-col items-center justify-center">
       <div class=" ">
         <div class="flex flex-col lg:flex-row lg:gap-x-2 justify-center items-center">
           <div class="relative w-[340px] lg:w-[280px]">
             <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
             <input type="text" placeholder="عنوان شغلی، نام شرکت، مهارت یا..."
-                   class="rounded w-full h-[50px] pr-12 bg-white font-bold text-right"/>
+                   class="rounded w-full h-[50px] px-12 bg-white font-bold text-right"/>
           </div>
 
           <div class="hidden lg:flex lg:gap-x-2">
@@ -169,7 +169,7 @@
                 <span class="text-gray-200 opacity-55 pr-12" data-selected-option>همه استان ها</span>
                 <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
               </button>
-              <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg mt-1 hidden z-[1000]" data-dropdown>
+              <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg my-1 hidden z-[1000]" data-dropdown>
                 <input type="text" class="w-full p-2 border-b border-gray-300 focus:outline-none" data-search-input placeholder="جستجو...">
                 <ul class="max-h-60 overflow-auto" data-options-list>
                   <li class="p-2 hover:bg-gray-200 cursor-pointer">همه استان ها</li>
