@@ -152,62 +152,62 @@
 
 
   <!--  blue part جست و جو مشاغل-->
-  <section class="container  ">
-    <div class=" py-12 bg-blue-100 z-10 shadow-lg rounded-lg  h-auto flex flex-col items-center justify-center">
-      <div class=" ">
-        <div class="flex flex-col lg:flex-row lg:gap-x-2 justify-center items-center">
-          <div class="relative">
-            <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-            <input type="text" placeholder="عنوان شغلی، نام شرکت، مهارت یا..."
-                   class="rounded w-full h-12 px-12 bg-white font-bold text-right"/>
-          </div>
+ <section class="container  ">
+     <div class=" py-12 bg-blue-100  shadow-lg rounded-lg  h-auto flex my-5 flex-col items-center justify-center">
+         <div class=" ">
+             <div class="flex flex-col lg:flex-row lg:gap-x-2 justify-center items-center">
+                 <div class="relative w-[340px] lg:w-[280px]">
+                     <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                     <input type="text" placeholder="عنوان شغلی، نام شرکت، مهارت یا..."
+                            class="rounded w-full h-[50px] pr-12 bg-white font-bold text-right"/>
+                 </div>
 
-          <div class="hidden lg:flex lg:gap-x-2">
-            <div class="relative hidden lg:block" data-select-container>
-              <button class="relative w-full h-12 rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
-                <i class="fa-solid fa-location-dot absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                <span class="text-gray-200 opacity-55 px-12" data-selected-option>همه استان ها</span>
-                <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
-              </button>
-              <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg my-1 hidden z-[1000]" data-dropdown>
-                <input type="text" class="w-full p-2 border-b border-gray-300 focus:outline-none" data-search-input placeholder="جستجو...">
-                <ul class="max-h-60 overflow-auto" data-options-list>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">همه استان ها</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">تهران</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">خراسان رضوی</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">اصفهان</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">شیراز</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">تبریز</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">مازندران</li>
-                </ul>
-              </div>
-            </div>
-            <div class="relative w-2xs hidden lg:block" data-select-container>
-              <button class="relative w-full h-12 rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
-                <i class="fa-solid fa-bars absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                <span class="text-gray-200 opacity-55 px-12" data-selected-option>همه دسته بندی ها</span>
-                <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
-              </button>
-              <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg my-1 hidden z-[1000]" data-dropdown>
-                <input type="text" class="w-full p-2 border-b border-gray-300 focus:outline-none" data-search-input placeholder="جستجو...">
-                <ul class="max-h-60 overflow-auto" data-options-list>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">همه دسته بندی ها</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">وب , برنامه نویسی نرم افزار</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">فروش و بازاریابی</li>
-                  <li class="p-2 hover:bg-gray-200 cursor-pointer">مالی و حسابداری</li>
-                </ul>
-              </div>
-            </div>
+                 <div class="hidden lg:flex lg:gap-x-2">
+                     <div class="relative w-[280px] hidden lg:block" data-select-container>
+                         <button class="relative w-full h-[50px] rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
+                             <i class="fa-solid fa-location-dot absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                             <span class="text-gray-200 opacity-55 pr-12" data-selected-option>همه استان ها</span>
+                             <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
+                         </button>
+                         <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg mt-1 hidden z-[1000]" data-dropdown>
+                             <input type="text" class="w-full p-2 border-b border-gray-300 focus:outline-none" data-search-input placeholder="جستجو...">
+                             <ul class="max-h-60 overflow-auto" data-options-list>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">همه استان ها</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">تهران</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">خراسان رضوی</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">اصفهان</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">شیراز</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">تبریز</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">مازندران</li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="relative w-[280px] hidden lg:block" data-select-container>
+                         <button class="relative w-full h-[50px] rounded bg-white text-gray-800 font-bold border border-gray-300 px-4 flex justify-between items-center" data-select-btn>
+                             <i class="fa-solid fa-bars absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                             <span class="text-gray-200 opacity-55 pr-12" data-selected-option>همه دسته بندی ها</span>
+                             <span class="text-gray-500"><i class="fa-solid fa-angle-down"></i></span>
+                         </button>
+                         <div class="absolute top-full left-0 w-full bg-white border border-gray-300 rounded shadow-lg mt-1 hidden z-[1000]" data-dropdown>
+                             <input type="text" class="w-full p-2 border-b border-gray-300 focus:outline-none" data-search-input placeholder="جستجو...">
+                             <ul class="max-h-60 overflow-auto" data-options-list>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">همه دسته بندی ها</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">وب , برنامه نویسی نرم افزار</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">فروش و بازاریابی</li>
+                                 <li class="p-2 hover:bg-gray-200 cursor-pointer">مالی و حسابداری</li>
+                             </ul>
+                         </div>
+                     </div>
 
 
-            <div class="flex justify-center items-center w-screen lg:w-auto bg-yellow-100 p-3 rounded hover:bg-orange-300 cursor-pointer mt-3 lg:mt-0">
-              <input type="button" value="جست و جو در مشاغل" class=" text-gray-500  font-bold "/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                     <div class="flex justify-center items-center w-screen lg:w-auto bg-yellow-100 p-3 rounded hover:bg-orange-300 cursor-pointer mt-3 lg:mt-0">
+                         <input type="button" value="جست و جو در مشاغل" class=" text-gray-500  font-bold "/>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
 
   
     <!-- search section  -->
