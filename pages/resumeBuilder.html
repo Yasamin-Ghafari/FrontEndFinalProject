@@ -225,8 +225,64 @@
            </section>
 
            <!-- وقتی روی اطلاعات فردی کلیک میکنیم -->
-            <section>
-              <div class="lg:w-2/3 bg-white rounded border border-slate-200 border-r-4 border-r-gray-15">
+            <section class="container">
+              <div class="lg:w-2/3 bg-blue-50 rounded border border-slate-200 border-r-4 border-r-gray-15">
+                <div class="p-3 bg-gray-10 border-b py-2 border-slate-200">
+                  <i class="fa-solid fa-user" style="color: gray"></i>
+                  <span class="text-lg text-gray-500">اطلاعات فردی</span>
+                </div>
+                <div class="p-10 flex flex-col gap-y-4 lg:gap-4 lg:grid lg:grid-cols-2 text-gray-500">
+                  <div class="flex flex-col gap-y-2">
+                    <label for="">آدرس ایمیل</label>
+                    <input class="py-2" type="text">
+                  </div>
+                  <div class="flex flex-col gap-y-2">
+                    <label for="">شماره موبایل</label>
+                    <input class="py-2" type="text">
+                  </div>
+                  <div class="flex flex-col gap-y-2">
+                    <label for="city">استان محل سکونت</label>
+                    <select name="city" id="city" class="px-2 py-3">
+                      <option value="بوشهر">بوشهر</option>
+                      <option value="بوشهر">بوشهر</option>
+                      <option value="بوشهر">بوشهر</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-y-2">
+                    <label for="">آدرس محل سکونت</label>
+                    <input class="py-2" type="text">
+                  </div>
+                  <div class="flex flex-col gap-y-2">
+                    <span>وضعیت تاهل</span>
+                    <div>
+                      <input name="marriage" type="radio">
+                      <label for="">مجرد</label>
+                      <input name="marriage" type="radio">
+                      <label for="">متاهل</label>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-y-2">
+                    <label for="">سال تولد</label>
+                    <input class="py-2" type="text">
+                  </div>
+                  <div class="flex flex-col gap-y-2">
+                    <span>جنسیت</span>
+                    <div>
+                      <input name="gender" type="radio">
+                      <label for="">زن</label>
+                      <input name="gender" type="radio">
+                      <label for="">مرد</label>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="flex justify-end gap-x-2 py-4 px-10">
+                  <button class="p-3 border border-gray-300 rounded text-gray-500">انصراف</button>
+                  <button class="p-3 border border-gray-300 rounded bg-blue-400 text-white">دخیره</button>
+                </div>
+
+
               </div>
             </section>
 
