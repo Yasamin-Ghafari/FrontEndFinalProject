@@ -172,7 +172,7 @@
       </div>
     </section>
 
-    <main class="flex flex-col lg:flex-row lg:gap-x-14">
+    <main class="container flex flex-col lg:flex-row lg:gap-x-14">
 
       <!-- right side -->
       <div class="flex flex-col gap-y-5 py-10 lg:w-2/3">
@@ -216,9 +216,63 @@
               </div>
           </div>
           </div>
+          </div>
          </section>
 
          <!-- وقتی روی اطلاعات اولیه کلیک میکنیم -->
+          <section class="container">
+            <div class=" bg-blue-50 rounded border flex flex-col lg:flex-row border-slate-200 border-r-4 border-r-gray-15">
+              <div class="p-8 bg-gray-10 border-b flex justify-center lg:items-center border-slate-200">
+                <form action="#">
+                  <input type="file">
+                </form>
+              </div>
+              <div class="relative h-auto group">
+                <div class="p-10">
+                  <div class="flex flex-col gap-y-4">
+                    <div class="flex flex-col gap-y-2">
+                      <label for="">نام و نام خانوادگی</label>
+                      <input class="py-2" type="text">
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                      <label class="">عنوان شغلی:</label>
+                      <input class="py-2" type="text">
+                    </div>
+                    <div class="flex flex-col gap-x-2">
+                      <span class="">وضعیت اشتغال:</span>
+                      <div class="flex gap-x-4 py-2">
+                        <div>
+                          <input name="job" type="radio">
+                          <label for="">جویای کار</label>
+                        </div>
+                        <div>
+                          <input name="job" type="radio">
+                          <label for="">به دنبال شغل بهتر</label>
+                        </div>
+                        <div>
+                          <input name="job" type="radio">
+                          <label for="">شاغل</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                      <label class="">آخرین شرکت:</label>
+                      <input class="py-2" type="text">
+                  </div>
+                  <div class="flex flex-col gap-y-2">
+                    <label class="">آخرین مدرک تحصیلی:</label>
+                    <input class="py-2" type="text">
+                  </div>
+                  <div class="flex justify-end gap-x-2 py-4 px-10">
+                    <button class="p-3 border border-gray-300 rounded text-gray-500">انصراف</button>
+                    <button class="p-3 border border-gray-300 rounded bg-blue-400 text-white">دخیره</button>
+                  </div>
+  
+                </div>
+            </div>
+            </div>
+            </div>
+          </section>
 
           <!-- اطلاعات فردی -->
            <section class="container">
