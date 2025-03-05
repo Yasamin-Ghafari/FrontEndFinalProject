@@ -73,7 +73,7 @@ window.addEventListener('click', (e) => {
     }
   });
 
-
+  
 // footer click vector for responsive
 // document.addEventListener("DOMContentLoaded", function () {
 //     const toggleMenus = [
@@ -99,6 +99,8 @@ window.addEventListener('click', (e) => {
 //         });
 //     });
 // });
+
+
 
 
 new Swiper('.myswiper',{
