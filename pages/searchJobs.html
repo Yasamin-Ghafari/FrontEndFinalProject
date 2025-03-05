@@ -12,124 +12,56 @@
 
  <!-- header -->
  <header class="bg-gray-200">
-  <div class="container w-full z-10 p-4 flex justify-between  items-center">
-    <!-- mobile -->
-    <div>
-      <button id="menuButton" class="px-3 py-2 bg-gray-100 text-white rounded lg:hidden"><i class="fa-sharp fa-solid fa-bars"></i></button>
-      <ul
-        id="dropdownMenu"
-        class="hidden z-10 absolute bg-gray-200 p-3 w-full my-4 right-0 border border-t-slate-100 lg:hidden"
-      >
-          <li class="flex hover:bg-gray-100  p-4 gap-2.5 bg-gray-200 border border-b-gray-300">
-            <a class="flex" href="./index.html">
-              <i class="fa-solid fa-house text-yellow-300 px-2"></i>
-              <span class="text-white">خانه</span>
-            </a>
-          </li>
-          <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
-            <a class="flex" href="./searchJobs.html">
-              <i class="fa-solid fa-magnifying-glass text-yellow-300 px-2 "></i>
-              <span class="text-white">جستجوی مشاغل</span>
-            </a>
-          </li>
-          <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
-            <a class="flex" href="./resumeBuilder.html">
-              <i class="fa-regular fa-star text-yellow-300 px-2"></i>
-              <span class="text-white">رزومه ساز</span>
-            </a>
-          </li>
-          <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
-            <a class="flex" href="/">
-              <i class="fa-regular fa-gem text-yellow-300 px-2"></i>
-              <span class="text-white">۵۰ شرکت برتر</span>
-            </a>
-          </li>
-          <li class="flex p-4 gap-2.5 hover:bg-gray-100 bg-gray-200 border border-b-gray-300">
-            <a class="flex" href="/">
-              <i class="fa-regular fa-building text-yellow-300 px-2"></i>
-              <span class="text-white">بخش کارفرمایان</span>
-            </a>
-          </li>
-      </ul>
-      <a class="lg:hidden px-1 text-gray-300">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </a>
+  <div class="container w-full p-4 flex justify-between lg:justify-around items-center">
+    <div class="flex items-center gap-x-5">
+      <button id="menuButton" class="bg-gray-100 text-white px-3 py-2 lg:hidden">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+        <div class="relative">
+          <ul id="dropdownMenu" class="absolute z-10 flex flex-col lg:static lg:flex-row text-xs  border lg:border-none my-10 lg:my-0 lg:gap-x-10 lg:text-sm">
+            <li class="flex items-center gap-x-2 text-white border-b lg:border-b-0 lg:border-l border-slate-200 px-5 py-2 ">
+              <i class="fa-solid fa-home"></i>
+              <a href="">خانه</a>
+            </li>
+            <li class="flex items-center gap-x-2 border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="./searchJobs.html">جستجوی مشاغل</a>
+            </li>
+            <li class="flex items-center gap-x-2 border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+              <i class="fa-solid fa-star"></i>
+              <a href="./resumeBuilder.html">رزومه ساز</a>
+            </li>
+            <li class="flex items-center gap-x-2 border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+              <i class="fa-solid fa-gem"></i>
+              <a href="">۵۰ شرکت برتر</a>
+            </li>
+            <!-- <li>
+              <i class="fa-solid fa-building"></i>
+              <a href="">5</a>
+            </li> -->
+          </ul>
+        </div>
+        <a href="./searchJobs.html" class="lg:hidden">
+          <i class="fa-solid fa-magnifying-glass text-gray-300 "></i>
+        </a>
     </div>
-    <div class="font-bold text-2xl text-white lg:hidden"><a href="./index.html">jobinja</a></div>
-    <div class="lg:hidden">
-     <a class="text-gray-300 p-2">
-      <i class="fa-regular fa-bell"></i>
-     </a>
-      <a id="btn" class="mx-1 text-gray-300 p-2">
-        <i class="fa-solid fa-user"></i>
-      </a>
-      <ul id="listButton" class="hidden absolute w-1/3 border-t border-gray-300 px-5 my-4 lg:hidden bg-gray-200">
-          <li class="text-white border-b py-2 border-gray-300">
-            <a href="/sign-up">ثبت نام کارجو</a>
-          </li>
-          <li class="text-white py-2">
-            <a href="/sing-in">ورود کارجو</a>
-          </li>
-      </ul>
+    <div class="flex gap-x-20 lg:gap-x-10">
+      <div class="p-3">
+        <a href="./index.html" class="text-white">jobinja</a>
+      </div>
+      <div class="flex gap-x-5 text-gray-300">
+        <button>
+          <i class="fa-solid fa-bell"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </div>
+      
+
     </div>
-    <!-- laptop -->
-    <ul class="hidden lg:flex lg:px-10">
-        <li>
-          <a href="./index.html"  class="flex p-4 gap-2.5 border-l border-gray-500 items-center hover:bg-gray-100">
-            <i class="fa-solid fa-house text-yellow-300"></i>
-            <span class="text-white">خانه</span>
-          </a>
-        </li>
-        <li>
-          <a href="./searchJobs.html" target="_blank" class="flex p-4 gap-2.5 hover:bg-gray-100 border-l border-gray-500 items-center">
-            <i class="fa-solid fa-magnifying-glass text-yellow-300"></i>
-            <span class="text-white">جستجوی مشاغل</span>
-          </a>
-        </li>
-        <li>
-          <a href="./resumeBuilder.html" class="flex p-4 gap-2.5 border-l border-gray-500 hover:bg-gray-100">
-            <i class="fa-regular fa-star text-yellow-300"></i>
-            <span class="text-white">رزومه ساز</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex p-4 gap-2.5 border-l border-gray-500 hover:bg-gray-100 items-center">
-            <i class="fa-regular fa-gem text-yellow-300"></i>
-            <span class="text-white">۵۰ شرکت برتر</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex p-4 gap-2.5 border-l border-gray-500 hover:bg-gray-100 items-center">
-            <i class="fa-regular fa-building text-yellow-300"></i>
-            <span class="text-white">بخش کارفرمایان</span>
-          </a>
-        </li>
-    </ul>
-    <ul class="hidden lg:flex lg:px-10">
-        <li class="flex p-4 gap-2.5 hover:bg-gray-100 ">
-          <a href="/">
-            <i class="fa-regular fa-bell text-yellow-300"></i>
-          </a>
-        </li>
-        <li class="p-4 hover:bg-gray-100">
-          <a href="/sign-up" class="flex items-center gap-2.5">
-            <i class="fa-solid fa-user text-yellow-300"></i>
-            <span class="text-white">ثبت نام کارجو</span>
-          </a>
-        </li>
-        <li class=" p-4 hover:bg-gray-100">
-          <a href="/sing-in" class="flex items-center gap-2.5">
-            <i class="fa-solid fa-right-to-bracket text-yellow-300"></i>
-            <span class="text-white">ورود کارجو</span>
-          </a>
-        </li>
-        <li class="flex p-4 gap-2.5 border-r hover:bg-gray-100">
-          <a href="./index.html">
-            <span class="text-white">jobinja</span>
-          </a>
-        </li>
-    </ul>
-  </div>
+    
+        </div>
 </header>
 
 
