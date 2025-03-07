@@ -23,23 +23,23 @@
           <button id="menuButton" class="bg-gray-100 text-white px-3 py-2 lg:hidden">
             <i class="fa-sharp fa-solid fa-bars"></i>
             </button>
-            <div class="relative">
-              <ul id="dropdownMenu" class="hidden absolute z-10 lg:flex flex-col lg:static lg:flex-row text-xs  border lg:border-none my-10 lg:my-0 lg:gap-x-10 lg:text-sm">
-                <li class="flex items-center gap-x-2 text-white bg-gray-600 hover:bg-gray-500 lg:bg-transparent border-b lg:border-b-0 lg:border-l border-slate-200 px-5 py-2 ">
+            <div class="">
+              <ul id="dropdownMenu" class="hidden  lg:flex flex-col lg:static lg:flex-row text-xs  border lg:border-none  lg:my-0 lg:gap-x-10 lg:text-sm">
+                <li class="flex items-center gap-x-2 text-white bg-gray-600 hover:bg-gray-500 lg:bg-transparent  lg:border-b-0 lg:border-l border-slate-200 px-5 py-2 ">
                   <i class="fa-solid fa-home"></i>
-                  <a href="./index.html">خانه</a>
+                  <a href="./index.html" >خانه</a>
                 </li>
-                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent  lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
                   <i class="fa-solid fa-magnifying-glass"></i>
-                  <a href="./searchJobs.html">جستجوی مشاغل</a>
+                  <a href="./searchJobs.html" target="_blank">جستجوی مشاغل</a>
                 </li>
-                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent  lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
                   <i class="fa-solid fa-star"></i>
-                  <a href="./resumeBuilder.html">رزومه ساز</a>
+                  <a href="./resumeBuilder.html" target="_blank">رزومه ساز</a>
                 </li>
-                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent  lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
                   <i class="fa-solid fa-gem"></i>
-                  <a href="">۵۰ شرکت برتر</a>
+                  <a  href="./best_company.html" target="_blank">۵۰ شرکت برتر</a>
                 </li>
                 <!-- <li>
                   <i class="fa-solid fa-building"></i>
@@ -71,9 +71,9 @@
     </header>
 
     <!--  blue header-->
-    <nav class="">
+    <nav class="bg-blue-100">
       <div
-        class="container bg-blue-100 h-auto py-5 flex flex-col items-center justify-center"
+        class="container  h-auto py-5 flex flex-col items-center justify-center"
       >
         <h1 class="text-lg lg:text-2xl text-white py-5 text-center">
           ۲۲,۳۲۱ آگهی استخدام فعال در ۹,۲۹۷ شرکت ایرانی
@@ -199,118 +199,92 @@
 
     <main class="container">
 
-       <!--    slider jobs-->
+      <!--    slider jobs-->
       <section class="container">
-        <div class="flex py-3 justify-center items-center">
-          <p>
-            یک رزومه در جابینجا به
-            <span class="text-blue-600">شرکت فناوران</span> ارسال شد.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-12">
-          <div class="col-span-full">
-            <div class="swiper myswiper">
-              <div class=" ">
-                <button
-                  class="swiper-btn-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-3"
-                >
-                  <i class="fa-solid fa-arrow-right fa-rotate-180"></i>
-                </button>
-                <button
-                  class="swiper-btn-next absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-3"
-                >
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-              <div class="swiper-wrapper mt-[30px]">
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex flex-col justify-center items-center">
-                    <img src="/public/images/main.png" />
-                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
-                    <span class="text-[11px] text-blue-600"
-                      >میزگرد نرم افزار</span
-                    >
-                  </div>
-                </div>
-              </div>
+            <div class="flex py-3 justify-center items-center">
+                <p>یک رزومه در جابینجا به <span class="text-blue-600">شرکت فناوران</span> ارسال شد.</p>
             </div>
-          </div>
-        </div>
-      </section>
 
+            <div class="grid  grid-cols-12">
+                <div class="col-span-full ">
+                    <div class="swiper myswiper ">
+                        <div class=" ">
+                            <button class="swiper-btn-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-3">
+                                <i class="fa-solid fa-arrow-right fa-rotate-180"></i>
+                            </button>
+                            <button class="swiper-btn-next absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-3">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="swiper-wrapper mt-[30px] ">
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img src="/public/images/main.png">
+                                    <span class="text-[11px] text-gray-400">5 فرصت شغلی</span>
+                                    <span class="text-[11px] text-blue-600">میزگرد نرم افزار</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
       <!--    چپ و راست-->
       <section class="container">
         <div class="lg:flex lg:gap-x-5">
@@ -1965,4 +1939,5 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../script/index.js"></script>
+
 </html>

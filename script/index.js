@@ -58,20 +58,20 @@ menuButton.addEventListener("click", () => {
         menuButton.innerHTML = "❌";
     }
 });
-window.addEventListener('click', (e) => {
-    if (!menuButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
-      dropdownMenu.classList.add('hidden');
-    }
-  });
-
-  btn.addEventListener("click", () => {
-    listButton.classList.toggle("hidden");
-  });
-  window.addEventListener('click', (e) => {
-    if (!btn.contains(e.target) && !listButton.contains(e.target)) {
-      listButton.classList.add('hidden');
-    }
-  });
+// window.addEventListener('click', (e) => {
+//     if (!menuButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+//       dropdownMenu.classList.add('hidden');
+//     }
+//   });
+//
+//   btn.addEventListener("click", () => {
+//     listButton.classList.toggle("hidden");
+//   });
+//   window.addEventListener('click', (e) => {
+//     if (!btn.contains(e.target) && !listButton.contains(e.target)) {
+//       listButton.classList.add('hidden');
+//     }
+//   });
 
   
 // footer click vector for responsive

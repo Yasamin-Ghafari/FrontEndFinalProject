@@ -15,21 +15,21 @@
           <button id="menuButton" class="bg-gray-100 text-white px-3 py-2 lg:hidden">
             <i class="fa-sharp fa-solid fa-bars"></i>
             </button>
-            <div class="relative">
-              <ul id="dropdownMenu" class="hidden absolute z-10 lg:flex flex-col lg:static lg:flex-row text-xs  border lg:border-none my-10 lg:my-0 lg:gap-x-10 lg:text-sm">
-                <li class="flex items-center gap-x-2 text-white bg-gray-600 hover:bg-gray-500 lg:bg-transparent border-b lg:border-b-0 lg:border-l border-slate-200 px-5 py-2 ">
+            <div class="">
+              <ul id="dropdownMenu" class="hidden   lg:flex flex-col lg:static lg:flex-row text-xs  border lg:border-none  lg:my-0 lg:gap-x-10 lg:text-sm">
+                <li class="flex items-center gap-x-2 text-white bg-gray-600 hover:bg-gray-500 lg:bg-transparent  lg:border-b-0 lg:border-l border-slate-200 px-5 py-2 ">
                   <i class="fa-solid fa-home"></i>
                   <a href="./index.html">خانه</a>
                 </li>
-                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent  lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <a href="./searchJobs.html">جستجوی مشاغل</a>
                 </li>
-                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent  lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
                   <i class="fa-solid fa-star"></i>
                   <a href="./resumeBuilder.html">رزومه ساز</a>
                 </li>
-                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent border-b lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
+                <li class="flex items-center gap-x-2 bg-gray-600 hover:bg-gray-500 lg:bg-transparent  lg:border-b-0 lg:border-l border-slate-200 text-white py-2 px-5">
                   <i class="fa-solid fa-gem"></i>
                   <a href="">۵۰ شرکت برتر</a>
                 </li>
@@ -70,9 +70,9 @@
         <!-- اطلاعات اولیه -->
          <section class="container">
           <div class=" bg-white rounded border flex flex-col lg:flex-row border-slate-200 border-r-4 border-r-gray-15">
-            <div class="p-8 bg-gray-10 border-b flex justify-center lg:items-center border-slate-200">
-              <form action="#">
-                <input type="file">
+            <div class="p-8 bg-gray-10 border-b flex justify-center lg:items-center border-slate-200 w-1/3">
+              <form class="w-full">
+                <input type="file" class="w-full">
               </form>
             </div>
             <div class="relative h-auto group">
@@ -110,8 +110,8 @@
          </section>
 
          <!-- وقتی روی اطلاعات اولیه کلیک میکنیم -->
-          <section class="container">
-            <div class=" bg-blue-50 rounded border flex flex-col lg:flex-row border-slate-200 border-r-4 border-r-gray-15">
+        <section class="container">
+            <div class=" bg-blue-400 bg-opacity-10 rounded border flex flex-col lg:flex-row border-slate-200 border-r-4 border-r-gray-15">
               <div class="p-8 bg-gray-10 border-b flex justify-center lg:items-center border-slate-200">
                 <form action="#">
                   <input type="file">
@@ -121,37 +121,37 @@
                 <div class="p-10">
                   <div class="flex flex-col gap-y-4">
                     <div class="flex flex-col gap-y-2">
-                      <label for="">نام و نام خانوادگی</label>
-                      <input class="py-2" type="text">
+                      <label for="name_user">نام و نام خانوادگی</label>
+                      <input class="py-2" type="text" id="name_user">
                     </div>
                     <div class="flex flex-col gap-y-2">
-                      <label class="">عنوان شغلی:</label>
-                      <input class="py-2" type="text">
+                      <label for="jobs_tittle">عنوان شغلی:</label>
+                      <input class="py-2" type="text" id="jobs_tittle">
                     </div>
                     <div class="flex flex-col gap-x-2">
                       <span class="">وضعیت اشتغال:</span>
                       <div class="flex gap-x-4 py-2">
                         <div>
-                          <input name="job" type="radio">
-                          <label for="">جویای کار</label>
+                          <input name="job" type="radio" id="find_job">
+                          <label for="find_job">جویای کار</label>
                         </div>
                         <div>
-                          <input name="job" type="radio">
-                          <label for="">به دنبال شغل بهتر</label>
+                          <input name="job" type="radio" id="best_job">
+                          <label for="best_job">به دنبال شغل بهتر</label>
                         </div>
                         <div>
-                          <input name="job" type="radio">
-                          <label for="">شاغل</label>
+                          <input name="job" type="radio" id="work">
+                          <label for="work">شاغل</label>
                         </div>
                       </div>
                     </div>
                     <div class="flex flex-col gap-y-2">
-                      <label class="">آخرین شرکت:</label>
-                      <input class="py-2" type="text">
+                      <label for="last_company">آخرین شرکت:</label>
+                      <input class="py-2" type="text" id="last_company">
                   </div>
                   <div class="flex flex-col gap-y-2">
-                    <label class="">آخرین مدرک تحصیلی:</label>
-                    <input class="py-2" type="text">
+                    <label for="education">آخرین مدرک تحصیلی:</label>
+                    <input class="py-2" type="text" id="education">
                   </div>
                   <div class="flex justify-end gap-x-2 py-4 px-10">
                     <button class="p-3 border border-gray-300 rounded text-gray-500">انصراف</button>
@@ -165,7 +165,7 @@
           </section>
 
           <!-- اطلاعات فردی -->
-           <section class="container">
+        <section class="container">
             <div class=" bg-white rounded border border-slate-200 border-r-4 border-r-gray-15">
               <div class="p-3 bg-gray-10 border-b py-2 border-slate-200">
                 <i class="fa-solid fa-user" style="color: gray"></i>
@@ -213,20 +213,20 @@
            </section>
 
            <!-- وقتی روی اطلاعات فردی کلیک میکنیم -->
-            <section class="container">
-              <div class=" bg-blue-50 rounded border border-slate-200 border-r-4 border-r-gray-15">
+        <section class="container">
+              <div class=" bg-blue-400 bg-opacity-10 rounded border border-slate-200 border-r-4 border-r-gray-15">
                 <div class="p-3 bg-gray-10 border-b py-2 border-slate-200">
                   <i class="fa-solid fa-user" style="color: gray"></i>
                   <span class="text-lg text-gray-500">اطلاعات فردی</span>
                 </div>
                 <div class="p-10 flex flex-col gap-y-4 lg:gap-4 lg:grid lg:grid-cols-2 text-gray-500">
                   <div class="flex flex-col gap-y-2">
-                    <label for="">آدرس ایمیل</label>
-                    <input class="py-2" type="text">
+                    <label for="address_email">آدرس ایمیل</label>
+                    <input class="py-2" type="text" id="address_email">
                   </div>
                   <div class="flex flex-col gap-y-2">
-                    <label for="">شماره موبایل</label>
-                    <input class="py-2" type="text">
+                    <label for="phone">شماره موبایل</label>
+                    <input class="py-2" type="text" id="phone">
                   </div>
                   <div class="flex flex-col gap-y-2">
                     <label for="city">استان محل سکونت</label>
@@ -237,38 +237,38 @@
                     </select>
                   </div>
                   <div class="flex flex-col gap-y-2">
-                    <label for="">آدرس محل سکونت</label>
-                    <input class="py-2" type="text">
+                    <label for="address_home">آدرس محل سکونت</label>
+                    <input class="py-2" type="text" id="address_home">
                   </div>
                   <div class="flex flex-col gap-y-2">
                     <span>وضعیت تاهل</span>
                     <div>
                       <input name="marriage" type="radio">
-                      <label for="">مجرد</label>
+                      <label >مجرد</label>
                       <input name="marriage" type="radio">
-                      <label for="">متاهل</label>
+                      <label >متاهل</label>
                     </div>
                   </div>
                   <div class="flex flex-col gap-y-2">
-                    <label for="">سال تولد</label>
-                    <input class="py-2" type="text">
+                    <label for="birthday">سال تولد</label>
+                    <input class="py-2" type="text" id="birthday">
                   </div>
                   <div class="flex flex-col gap-y-2">
                     <span>جنسیت</span>
                     <div>
                       <input name="gender" type="radio">
-                      <label for="">زن</label>
+                      <label >زن</label>
                       <input name="gender" type="radio">
-                      <label for="">مرد</label>
+                      <label >مرد</label>
                     </div>
                   </div>
 
+                  <div class="flex justify-end gap-x-2 py-4 px-10">
+                    <button class="p-3 border border-gray-300 rounded text-gray-500">انصراف</button>
+                    <button class="p-3 border border-gray-300 rounded bg-blue-400 text-white">دخیره</button>
+                  </div>
+                </div>
 
-                </div>
-                <div class="flex justify-end gap-x-2 py-4 px-10">
-                  <button class="p-3 border border-gray-300 rounded text-gray-500">انصراف</button>
-                  <button class="p-3 border border-gray-300 rounded bg-blue-400 text-white">دخیره</button>
-                </div>
 
 
               </div>
@@ -449,18 +449,18 @@
                 <div class="flex flex-col gap-y-2">
                   <div class="flex lg:flex-row flex-col gap-x-4 py-4 gap-y-2">
                     <div class="flex flex-col gap-y-2 ">
-                      <span class="text-gray-500">عنوان شغلی(سمت)</span>
+                      <label class="text-gray-500">عنوان شغلی(سمت)</label>
                       <input type="text" class="h-14 w-64"/>
                     </div>
                     <div class="flex flex-col gap-y-2 ">
-                      <span class="text-gray-500">نام شرکت</span>
+                      <label class="text-gray-500">نام شرکت</label>
                       <input type="text" class="h-14 w-64"/>
                     </div>
                   </div>
                   <div class="flex flex-col  justify-around">
                       <span  class="flex  text-gray-500">تاریخ اشتغال</span>
                       <div class="flex lg:flex-row flex-col  lg:items-baseline gap-x-4 py-4">
-                        <span class="text-gray-500">از</span>
+                        <label class="text-gray-500">از</label>
                         <select class="h-14 w-64 text-gray-500 px-2">
                           <option class="text-gray-500">ماه شروع همکاری</option>
                           <option class="text-gray-500">فروردین</option>
@@ -470,16 +470,16 @@
                       </div>
 
                       <div class="flex  lg:flex-row flex-col lg:items-baseline gap-x-4 mb-4">
-                        <span class="text-gray-500">تا</span>
+                        <label class="text-gray-500">تا</label>
                         <select class="h-14 w-64 text-gray-500 px-2">
                           <option class="text-gray-500">ماه پایان همکاری</option>
                           <option class="text-gray-500">فروردین</option>
                           <option class="text-gray-500">اردیبهشت</option>
                         </select>
                         <input type="text" class="h-14 w-64 px-2" placeholder="سال پایان همکاری"/>
-                        <div class="py-3">
+                        <div class="py-3 flex justify-center items-center gap-x-4">
                           <input type="checkbox" id="checkbox_jobs"/>
-                          <label class="text-gray-500" for="checkbox_jobs">هنوز مشغولم</label>
+                          <label class="text-gray-500  w-28" for="checkbox_jobs">هنوز مشغولم</label>
                         </div>
 
 
@@ -550,11 +550,11 @@
                 <div class="flex flex-col">
                   <div class="flex lg:flex-row flex-col gap-x-4 gap-y-2 py-4">
                     <div class="flex flex-col gap-y-2">
-                      <span class="text-gray-500">رشته تحصیلی</span>
+                      <label class="text-gray-500">رشته تحصیلی</label>
                       <input type="text" class="h-14 w-64"/>
                     </div>
                     <div class="flex flex-col gap-y-2">
-                      <span class="text-gray-500">نام دانشگاه / موسسه آموزشی</span>
+                      <label class="text-gray-500">نام دانشگاه / موسسه آموزشی</label>
                       <input type="text" class="h-14 w-64"/>
                     </div>
                   </div>
@@ -594,11 +594,11 @@
                   <div class="flex flex-col  gap-4 my-4">
                     <span class="text-gray-500">تاریخ شروع و پایان تحصیل</span>
                     <div class="flex lg:flex-row flex-col lg:items-baseline gap-4">
-                      <span class="text-gray-500"> از سال </span>
+                      <label class="text-gray-500"> از سال </label>
                       <input type="text" class="h-14 w-64" />
                     </div>
                     <div class="flex lg:flex-row flex-col  lg:items-baseline  gap-4">
-                      <span class="text-gray-500"> تا سال </span>
+                      <label class="text-gray-500"> تا سال </label>
                       <input type="text" class="h-14 w-64 px-2" placeholder="سال فارغ التحصیلی" />
                     
                       <div class="mt-3">
@@ -673,7 +673,7 @@
                 <div class="flex flex-col">
                   <div class="flex lg:flex-row flex-col gap-y-2 gap-x-4 py-4">
                     <div class="flex flex-col gap-y-2 ">
-                      <span class="text-gray-500">نام زبان</span>
+                      <label class="text-gray-500">نام زبان</label>
                       <select class="h-14 w-64 text-gray-500 px-2">
                         <option class="text-gray-500">نام زبان را انتخاب کنید </option>
                         <option class="text-gray-500">آذری</option>
@@ -682,7 +682,7 @@
                       </select>
                     </div>
                     <div class="flex flex-col gap-y-2 ">
-                      <span class="text-gray-500">سطح تسلط</span>
+                      <label class="text-gray-500">سطح تسلط</label>
                       <select class="h-14 w-64 text-gray-500 px-2">
                         <option class="text-gray-500">سطح تسلط را انتخاب کنید </option>
                         <option class="text-gray-500">مبتدی</option>
@@ -702,7 +702,7 @@
         </section>
 
           <!--ترجیحات شغلی-->
-          <section class="container">
+        <section class="container">
             <div class=" bg-white rounded border border-slate-200 border-r-4 border-r-gray-15">
               <div class="p-3 bg-gray-10 border-b py-2 border-slate-200">
                 <i class="fa-solid fa-globe" style="color: gray"></i>
@@ -818,7 +818,7 @@
                         </select>
                       </div>
                       <div class="flex flex-col gap-y-2 w-1/2">
-                        <span class="text-lg text-gray-500">دسته بندی شغلی و زمینه کاری</span>
+                        <label class="text-lg text-gray-500">دسته بندی شغلی و زمینه کاری</label>
                         <select class="h-14 w-64 text-gray-500 px-2">
                           <option class="text-gray-500">
                             وب , برنامه نویس و نرم افزار
@@ -875,7 +875,7 @@
                   <div class="h-auto mb-6">
                     <div class=" ">
                       <div class="flex gap-y-2 flex-col ">
-                        <span class="text-lg text-gray-500">حداقل حقوق درخواستی</span>
+                        <label class="text-lg text-gray-500">حداقل حقوق درخواستی</label>
                         <select class="h-14 w-64 text-gray-500 px-2">
                           <option class="text-gray-500">
                             توافقی
@@ -933,9 +933,6 @@
               </div>
             </div>
           </section>
-  
-
-
 
         </aside>
 
