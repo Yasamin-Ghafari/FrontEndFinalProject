@@ -102,6 +102,39 @@ menuButton.addEventListener("click", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionHeader = document.getElementById("accordion-header");
+    const accordionContent = document.getElementById("accordion-content");
+    const accordionIcon = document.getElementById("accordion-icon");
+    const imageContainer = document.getElementById("image-container");
+    const imagePlaceholder = document.getElementById("image-placeholder");
+
+    let isOpen = false;
+
+    accordionHeader.addEventListener("click", function () {
+        isOpen = !isOpen;
+
+        if (isOpen) {
+            // accordionContent.style.maxHeight = "500px";
+            accordionContent.style.opacity = "1";
+            accordionIcon.classList.add("rotate-180");
+
+            // Move image to the second div
+            imagePlaceholder.appendChild(imageContainer.firstElementChild);
+        } else {
+            // accordionContent.style.maxHeight = "0";
+            accordionContent.style.opacity = "0";
+            accordionIcon.classList.remove("rotate-180");
+
+            // Move image back to the first div
+            imageContainer.appendChild(imagePlaceholder.firstElementChild);
+        }
+    });
+});
+
+
+
+
 
 new Swiper('.myswiper',{
     slidesPerView: 1,

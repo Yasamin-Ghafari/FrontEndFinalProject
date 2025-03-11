@@ -1,18 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html dir="rtl">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>فهرست ۵۰ شرکت برتر ایران برای کار | جابینجا</title>
+
     <link rel="stylesheet" href="../dist/all.min.css" />
     <link href="../dist/stylesheet.css" rel="stylesheet" />
-    <title>فهرست ۵۰ شرکت برتر ایران برای کار | جابینجا</title>
+
 </head>
 <body>
 
+
+<!-- header -->
+<header class="bg-gray-200 relative">
+
+    <div class="container py-4 lg:h-4 lg:py-10 flex justify-between font-bold items-center">
+        <div class=" flex px-4 py-2 items-center gap-x-2">
+            <button id="menuButton" class="lg:hidden px-3 py-2 bg-gray-400 text-white">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="dropdownMenu" class="w-full right-0 hidden bg-gray-200 absolute lg:static lg:flex lg:flex-row z-10 text-white py-2 border lg:gap-x-5 gap-y-2 text-xs my-10">
+                    <li class="border-b lg:border-b-0 lg:border-l lg:px-2 border-slate-200 py-1">
+                        <a href="./index.html" class="flex gap-x-2 items-center">
+                            <img src="/public/images/House With Garden.svg" width="25px" alt="">
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="border-b  py-1 lg:border-b-0 lg:border-l lg:px-2 border-slate-200">
+                        <a href="/pages/searchJobs.html" target="_blank" class="flex gap-x-2 items-center">
+                            <img src="/public/images/Magnifying Glass Tilted Left.svg" width="25px" alt="">
+                            <span>جستجوی مشاغل</span>
+                        </a>
+                    </li>
+                    <li class=" border-b py-1 lg:border-b-0 lg:border-l lg:px-2 border-slate-200">
+                        <a href="/pages/resumeBuilder.html" target="_blank" class="flex gap-x-2 items-center">
+                            <img src="/public/images/Dizzy.svg" width="25px" alt="">
+                            <span>رزومه ساز</span>
+                        </a>
+                    </li>
+                    <li class="flex border-b py-1 lg:border-b-0 lg:border-l lg:px-2 border-slate-200">
+                        <a href="best_company.html" target="_blank" class="flex gap-x-2 items-center">
+                            <img src="/public/images/Gem Stone.svg" width="25px" alt="">
+                            <span href="">۵۰ شرکت برتر</span>
+                        </a>
+                    </li>
+                    <li class=" py-1 ">
+                        <a href="" class="flex gap-x-2 items-center">
+                            <img src="/public/images/Office Building.svg" width="25px" alt="">
+                            <span>بخش کارفرمایان</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="lg:hidden" href="./searchJobs.html">
+                <i class="fa-solid fa-search text-gray-300 hover:text-white"></i>
+            </a>
+        </div>
+        <div class="flex gap-x-20 lg:flex-row-reverse ">
+            <a href="./index.html" class="flex items-center px-8 text-white">jobinja</a>
+            <div class="relative px-4 py-2 text-gray-300 flex items-center gap-x-5">
+                <button class="flex items-center">
+                    <i class="fa-regular fa-bell hover:text-white"></i>
+                </button>
+                <button class="flex items-center">
+                    <i class="fa-solid fa-user hover:text-white"></i>
+                </button>
+                <div class="">
+                    <ul class="absolute my-12 bg-gray-800 py-4 lg:static lg:flex gap-x-2">
+                        <li>
+                            <a href="">ورود کارجو</a>
+                        </li>
+                        <li>
+                            <a href="">ثبت نام کارجو</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
 <!--blue section-->
-    <section class="bg-cover bg-center w-auto h-auto pb-10" style="background-image: url('/public/images/top50.webp');">
+<section class="bg-cover bg-center w-auto h-auto pb-10" style="background-image: url('/public/images/top50.webp')">
         <div class="container flex flex-col flex-wrap ">
             <h1 class="text-white text-[30px] my-12 text-center" >فهرست ۵۰ شرکت برتر ایران برای کار</h1>
             <h2 class="text-white text-[18px] lg:px-32 text-center mb-12">پیش از انتخاب شغل و مسیر حرفه‌ای خود، رتبه‌بندی شرکت‌های برتر ایران را در جابینجا مشاهده کنید!
@@ -24,5 +100,144 @@
         </div>
     </section>
 
+
+<section class="container">
+    <div class="border-slate-200 border-y-2 border-l-2  border-r-4 border-r-gray-15 mt-8">
+        <div id="accordion-header" class="flex shadow-md hover:bg-black/5 justify-center items-center gap-x-4    cursor-pointer relative transition-all duration-300">
+            <span class="text-gray-300 w-10 h-10 border-2 border-dashed border-gray-200 rounded-full flex items-center justify-center">
+              1
+            </span>
+            <div id="image-container" class="w-16 h-16 transition-all duration-500">
+                <img src="/public/images/snap.png" class="w-full h-full object-cover "/>
+            </div>
+            <span class="text-gray-50 text-lg w-1/2 transition-all duration-300">اسنپ فود | Snappfood</span>
+            <div>
+                <span class="text-yellow-500">۹/۶</span>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <i id="accordion-icon" class="fa-solid fa-caret-down fa-xl" style="color: #878a8c;"></i>
+
+        </div>
+        <div id="accordion-content" class="flex border-b  border-gray-15 justify-around items-start overflow-hidden transition-all duration-500 max-h-0 opacity-0">
+            <div class="flex flex-col text-gray-100 text-xs">
+                <div class="flex items-center justify-center gap-x-4">
+                    <div  id="image-placeholder" class="my-4 w-24 h-24 border-2 border-gray-300 overflow-hidden">
+                        <img src="/public/images/snap.png" class="w-full h-full object-cover rounded"/>
+                    </div>
+                    <a href="#" class="text-white bg-blue-400 w-fit  flex justify-center items-center p-4 rounded">
+                        مشاهده صفحه شرکت
+                    </a>
+                </div>
+                <div class="border-b-2 w-full border-gray-50 border-dashed pb-4">
+                    <span class="mr-2">کامپیوتر، فناوری اطلاعات و اینترنت |</span>
+                    <span class="mr-2">بیش از ۱۰۰۰ نفر |</span>
+                    <a href="#" class="text-blue-100 mr-2"> ۹۸ شغل فعال</a>
+                </div>
+                <div class="flex flex-col gap-2 text-blue-500 pt-4">
+                    <div class="flex items-center gap-x-2">
+                        <span class="bg-blue-50 p-2 border border-blue-500">10</span>
+                        <span>محبوبیت میان کارجویان</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <span class="bg-blue-50 p-2 border border-blue-500">10</span>
+                        <span>تعدد و تنوع فرصت شغلی</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <span class="bg-blue-50 p-2 border border-blue-500">10</span>
+                        <span>بررسی رزومه های تعریفی</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <img src='/public/images/people.jpg' class="w-[500px] h-68 rounded">
+            </div>
+        </div>
+
+        <div class="flex shadow-md hover:bg-black/5 justify-center items-center gap-x-4   p-2 cursor-pointer relative transition-all duration-300">
+            <span class="text-gray-300 w-10 h-10 border-2 border-dashed border-gray-200 rounded-full flex items-center justify-center">
+              1
+            </span>
+            <img src='/public/images/snap.png' class="w-16 h-16"/>
+            <span class="text-gray-50 text-lg w-1/2">اسنپ فود | Snappfood</span>
+            <div>
+                <span class="text-yellow-500">۹/۶</span>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #878a8c;"></i>
+
+        </div>
+
+        <div class="flex shadow-md hover:bg-black/5 justify-center items-center gap-x-4   p-2 cursor-pointer relative transition-all duration-300">
+            <span class="text-gray-300 w-10 h-10 border-2 border-dashed border-gray-200 rounded-full flex items-center justify-center">
+              1
+            </span>
+            <img src='/public/images/snap.png' class="w-16 h-16"/>
+            <span class="text-gray-50 text-lg w-1/2">اسنپ فود | Snappfood</span>
+            <div>
+                <span class="text-yellow-500">۹/۶</span>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #878a8c;"></i>
+
+        </div>
+
+        <div class="flex shadow-md hover:bg-black/5 justify-center items-center gap-x-4   p-2 cursor-pointer relative transition-all duration-300">
+            <span class="text-gray-300 w-10 h-10 border-2 border-dashed border-gray-200 rounded-full flex items-center justify-center">
+              1
+            </span>
+            <img src='/public/images/snap.png' class="w-16 h-16"/>
+            <span class="text-gray-50 text-lg w-1/2">اسنپ فود | Snappfood</span>
+            <div>
+                <span class="text-yellow-500">۹/۶</span>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #878a8c;"></i>
+
+        </div>
+
+        <div class="flex shadow-md hover:bg-black/5 justify-center items-center gap-x-4   p-2 cursor-pointer relative transition-all duration-300">
+            <span class="text-gray-300 w-10 h-10 border-2 border-dashed border-gray-200 rounded-full flex items-center justify-center">
+              1
+            </span>
+            <img src='/public/images/snap.png' class="w-16 h-16"/>
+            <span class="text-gray-50 text-lg w-1/2">اسنپ فود | Snappfood</span>
+            <div>
+                <span class="text-yellow-500">۹/۶</span>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #878a8c;"></i>
+
+        </div>
+
+        <div class="flex shadow-md hover:bg-black/5 justify-center items-center gap-x-4   p-2 cursor-pointer relative transition-all duration-300">
+            <span class="text-gray-300 w-10 h-10 border-2 border-dashed border-gray-200 rounded-full flex items-center justify-center">
+              1
+            </span>
+            <img src='/public/images/snap.png' class="w-16 h-16"/>
+            <span class="text-gray-50 text-lg w-1/2">اسنپ فود | Snappfood</span>
+            <div>
+                <span class="text-yellow-500">۹/۶</span>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #878a8c;"></i>
+
+        </div>
+
+        <div class="flex shadow-md hover:bg-black/5 justify-center items-center gap-x-4   p-2 cursor-pointer relative transition-all duration-300">
+            <span class="text-gray-300 w-10 h-10 border-2 border-dashed border-gray-200 rounded-full flex items-center justify-center">
+              1
+            </span>
+            <img src='/public/images/snap.png' class="w-16 h-16"/>
+            <span class="text-gray-50 text-lg w-1/2">اسنپ فود | Snappfood</span>
+            <div>
+                <span class="text-yellow-500">۹/۶</span>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+            </div>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #878a8c;"></i>
+
+        </div>
+    </div>
+</section>
 </body>
+<script src="../script/index.js"></script>
 </html>
