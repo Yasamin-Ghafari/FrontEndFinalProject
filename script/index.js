@@ -47,6 +47,32 @@ document.addEventListener("DOMContentLoaded", function () {
 //     }
 // });
 
+
+const loginTab = document.getElementById('loginTab');
+const registerTab = document.getElementById('registerTab');
+const loginContent = document.getElementById('loginContent');
+const registerContent = document.getElementById('registerContent');
+
+loginTab.addEventListener('click', () => {
+    loginTab.classList.add('border-blue-500', 'text-blue-500');
+    registerTab.classList.remove('border-blue-500', 'text-blue-500');
+    loginContent.classList.remove('hidden');
+    registerContent.classList.add('hidden');
+});
+
+registerTab.addEventListener('click', () => {
+    registerTab.classList.add('border-blue-500', 'text-blue-500');
+    loginTab.classList.remove('border-blue-500', 'text-blue-500');
+    registerContent.classList.remove('hidden');
+    loginContent.classList.add('hidden');
+});
+
+// پیش‌فرض نمایش تب ورود
+loginTab.classList.add('border-blue-500', 'text-blue-500');
+loginContent.classList.remove('hidden');
+
+
+
 //menu dropdown
 
 menuButton.addEventListener("click", () => {
@@ -102,6 +128,8 @@ menuButton.addEventListener("click", () => {
 
 
 
+// 50 شغل برتر 
+
 document.addEventListener("DOMContentLoaded", function () {
     const accordionHeader = document.getElementById("accordion-header");
     const accordionContent = document.getElementById("accordion-content");
@@ -115,16 +143,14 @@ document.addEventListener("DOMContentLoaded", function () {
         isOpen = !isOpen;
 
         if (isOpen) {
-            // accordionContent.style.maxHeight = "500px";
+            accordionContent.style.maxHeight = "500px";
             accordionContent.style.opacity = "1";
-            accordionIcon.classList.add("rotate-180");
 
             // Move image to the second div
             imagePlaceholder.appendChild(imageContainer.firstElementChild);
         } else {
-            // accordionContent.style.maxHeight = "0";
+            accordionContent.style.maxHeight = "0";
             accordionContent.style.opacity = "0";
-            accordionIcon.classList.remove("rotate-180");
 
             // Move image back to the first div
             imageContainer.appendChild(imagePlaceholder.firstElementChild);
