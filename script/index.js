@@ -1,3 +1,60 @@
+new Swiper('.myswiper',{
+    slidesPerView: 1,
+    loop: true,
+    speed: 400,
+    navigation: {
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+    },
+    autoplay: {
+        delay: 2000,
+    },
+    spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 2
+        },
+        480: {
+            slidesPerView: 3
+        },
+        640: {
+            slidesPerView: 4
+        },
+        1024: {
+            slidesPerView: 5
+        }
+    }})
+
+new Swiper('.myswiper1',{
+    pagination: {
+        el: ".swiper-pagination",
+    },
+
+    slidesPerView: 1,
+    loop: true,
+    speed: 400,
+    navigation: {
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+    },
+    spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        480: {
+            slidesPerView: 2
+        },
+        640: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }})
+
+
+
 const menuButton = document.getElementById("menuButton");
 const dropdownMenu = document.getElementById("dropdownMenu");
 const btn = document.getElementById("btn");
@@ -162,60 +219,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-new Swiper('.myswiper',{
-    slidesPerView: 1,
-    loop: true,
-    speed: 400,
-    navigation: {
-        nextEl: '.swiper-btn-next',
-        prevEl: '.swiper-btn-prev',
-    },
-    autoplay: {
-        delay: 2000,
-    },
-    spaceBetween: 10,
-    breakpoints: {
-        320: {
-            slidesPerView: 2
-        },
-        480: {
-            slidesPerView: 3
-        },
-        640: {
-            slidesPerView: 4
-        },
-        1024: {
-            slidesPerView: 5
-        }
-    }})
-
-new Swiper('.myswiper1',{
-    pagination: {
-        el: ".swiper-pagination",
-    },
-
-    slidesPerView: 1,
-    loop: true,
-    speed: 400,
-    navigation: {
-        nextEl: '.swiper-btn-next',
-        prevEl: '.swiper-btn-prev',
-    },
-    spaceBetween: 10,
-    breakpoints: {
-        320: {
-            slidesPerView: 1
-        },
-        480: {
-            slidesPerView: 2
-        },
-        640: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        }
-    }})
 
 // blue section
     function setupSearchableSelect(selectContainer) {
