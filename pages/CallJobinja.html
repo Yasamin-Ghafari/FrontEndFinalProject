@@ -8,77 +8,78 @@
     <title>تماس با ما | جابینجا</title>
 </head>
 <body>
-<main class="bg-gray-10">
     <header class="bg-gray-200 relative">
-
-        <div class="container py-4 lg:h-4 lg:py-10 flex justify-between font-bold items-center">
-            <div class=" flex px-4 py-2 items-center gap-x-2">
-                <button id="menuButton" class="lg:hidden px-3 py-2 bg-gray-400 text-white">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <nav>
-                    <ul id="dropdownMenu" class="w-full right-0 hidden bg-gray-200 absolute lg:static lg:flex lg:flex-row z-10 text-white py-2 border lg:gap-x-5 gap-y-2 text-xs my-10">
-                        <li class="border-b lg:border-b-0 lg:border-l lg:px-2 border-slate-200 py-1">
-                            <a href="./index.html" class="flex gap-x-2 items-center">
-                                <img src="/public/images/House With Garden.svg" width="25px" alt="">
-                                <span>خانه</span>
-                            </a>
-                        </li>
-                        <li class="border-b  py-1 lg:border-b-0 lg:border-l lg:px-2 border-slate-200">
-                            <a href="/pages/searchJobs.html" target="_blank" class="flex gap-x-2 items-center">
-                                <img src="/public/images/Magnifying Glass Tilted Left.svg" width="25px" alt="">
-                                <span>جستجوی مشاغل</span>
-                            </a>
-                        </li>
-                        <li class=" border-b py-1 lg:border-b-0 lg:border-l lg:px-2 border-slate-200">
-                            <a href="onlineResumeBuilder.html" target="_blank" class="flex gap-x-2 items-center">
-                                <img src="/public/images/Dizzy.svg" width="25px" alt="">
-                                <span>رزومه ساز</span>
-                            </a>
-                        </li>
-                        <li class="flex border-b py-1 lg:border-b-0 lg:border-l lg:px-2 border-slate-200">
-                            <a href="best_company.html" target="_blank" class="flex gap-x-2 items-center">
-                                <img src="/public/images/Gem Stone.svg" width="25px" alt="">
-                                <span href="">۵۰ شرکت برتر</span>
-                            </a>
-                        </li>
-                        <li class=" py-1 ">
-                            <a href="" class="flex gap-x-2 items-center">
-                                <img src="/public/images/Office Building.svg" width="25px" alt="">
-                                <span>بخش کارفرمایان</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <a class="lg:hidden" href="./searchJobs.html">
-                    <i class="fa-solid fa-search text-gray-300 hover:text-white"></i>
-                </a>
+    
+        <div class="container relative py-4 lg:h-4 lg:py-10 flex justify-between font-bold items-center">
+          <div class=" flex px-4 py-2 items-center gap-x-2">
+            <button id="menuButton" class="lg:hidden px-3 py-2 bg-gray-400 text-white">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="">
+              <ul id="dropdownMenu" class="hidden right-0 w-full bg-gray-200 absolute lg:static lg:flex lg:flex-row z-10 text-white py-2 px-4 border border-slate-200 lg:gap-x-5 lg:border-none gap-y-2 text-xs my-10">
+                <li class="border-b lg:border-none hover:bg-gray-600 lg:hover:bg-transparent lg:px-2 border-slate-200 py-1">
+                  <a href="./index.html" class="flex gap-x-2 items-center">
+                    <img src="/public/images/House With Garden.svg" width="25px" alt="">
+                    <span>خانه</span>
+                  </a>
+                </li>
+                <li class="border-b  py-1 lg:border-none  lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
+                  <a href="/pages/searchJobs.html" target="_blank" class="flex gap-x-2 items-center">
+                    <img src="/public/images/Magnifying Glass Tilted Left.svg" width="25px" alt="">
+                  <span>جستجوی مشاغل</span>
+                  </a>
+                </li>
+                <li class=" border-b py-1 lg:border-none  lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
+                  <a href="onlineResumeBuilder.html" target="_blank" class="flex gap-x-2 items-center">
+                    <img src="/public/images/Dizzy.svg" width="25px" alt="">
+                    <span>رزومه ساز</span>
+                  </a>
+                </li>
+                <li class="flex border-b py-1 lg:border-none lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
+                  <a href="best_company.html" target="_blank" class="flex gap-x-2 items-center">
+                    <img src="/public/images/Gem Stone.svg" width="25px" alt="">
+                    <span href="">۵۰ شرکت برتر</span>
+                  </a>
+                </li>
+                <li class=" py-1  hover:bg-gray-600 lg:hover:bg-transparent">
+                  <a href="" class="flex gap-x-2 items-center">
+                    <img src="/public/images/Office Building.svg" width="25px" alt="">
+                    <span>بخش کارفرمایان</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a class="lg:hidden" href="./searchJobs.html">
+              <i class="fa-solid fa-search text-gray-300 hover:text-white"></i>
+            </a>
+          </div>
+          <div class="flex gap-x-20 lg:flex-row-reverse ">
+            <a href="./index.html" class="flex items-center px-8 text-white">jobinja</a>
+            <div class="relative px-4 py-2 text-gray-300 flex items-center gap-x-5">
+              <button class="flex items-center">
+                <i class="fa-regular fa-bell hover:text-white"></i>
+              </button>
+              <button class="flex items-center lg:hidden">
+                <i class="fa-solid fa-user hover:text-white"></i>
+              </button>
+              <div class="">
+                <ul class="hidden absolute text-xs text-white flex flex-col lg:flex-row lg:gap-x-5 lg:bg-transparent gap-y-2 left-0 my-10 p-2 bg-gray-800 lg:static lg:flex gap-x-2">
+                  <li class="py-2 hover:bg-gray-900 lg:hover:bg-transparent border-b border-slate-200 lg:border-none">
+                    <a href="">ورود کارجو</a>
+                  </li>
+                  <li class="py-2 hover:bg-gray-900 lg:hover:bg-transparent">
+                    <a href="">ثبت نام کارجو</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="flex gap-x-20 lg:flex-row-reverse ">
-                <a href="./index.html" class="flex items-center px-8 text-white">jobinja</a>
-                <div class="relative px-4 py-2 text-gray-300 flex items-center gap-x-5">
-                    <button class="flex items-center">
-                        <i class="fa-regular fa-bell hover:text-white"></i>
-                    </button>
-                    <button class="flex items-center">
-                        <i class="fa-solid fa-user hover:text-white"></i>
-                    </button>
-                    <div class="">
-                        <ul class="absolute my-12 bg-gray-800 py-4 lg:static lg:flex gap-x-2">
-                            <li>
-                                <a href="">ورود کارجو</a>
-                            </li>
-                            <li>
-                                <a href="">ثبت نام کارجو</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+          </div>
+         
         </div>
-    </header>
+      </header>
 
+<main class="bg-gray-10">
+   
     <section class="container ">
         <div class="flex justify-center py-12  flex-col lg:flex-row lg:gap-x-10 gap-y-5">
             <div class="border border-slate-200 lg:w-2/3 rounded p-4 bg-white">
