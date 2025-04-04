@@ -8,75 +8,79 @@
     <title>قوانین و شرایط استفاده کارفرمایان | جابینجا</title>
 </head>
 <body>
-  <header class="bg-gray-200 relative">
-    
-    <div class="container relative py-4 lg:h-4 lg:py-10 flex justify-between font-bold items-center">
-      <div class=" flex px-4 py-2 items-center gap-x-2">
-        <button id="menuButton" class="lg:hidden px-3 py-2 bg-gray-400 text-white">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="">
-          <ul id="dropdownMenu" class="hidden right-0 w-full bg-gray-200 absolute lg:static lg:flex lg:flex-row z-10 text-white py-2 px-4 border border-slate-200 lg:gap-x-5 lg:border-none gap-y-2 text-xs my-10">
-            <li class="border-b lg:border-none hover:bg-gray-600 lg:hover:bg-transparent lg:px-2 border-slate-200 py-1">
-              <a href="./index.html" class="flex gap-x-2 items-center">
-                <img src="/public/images/House With Garden.svg" width="25px" alt="">
-                <span>خانه</span>
-              </a>
-            </li>
-            <li class="border-b  py-1 lg:border-none  lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
-              <a href="/pages/searchJobs.html" target="_blank" class="flex gap-x-2 items-center">
-                <img src="/public/images/Magnifying Glass Tilted Left.svg" width="25px" alt="">
+<!-- header -->
+<header class="bg-gray-200 ">
+
+  <div class="container relative py-4 lg:h-4 lg:py-10 flex justify-between font-bold items-center">
+    <div class=" flex px-4 py-2 items-center gap-x-2">
+      <button id="menuButton" class="lg:hidden px-3 py-2 bg-gray-400 text-white">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="">
+        <ul id="dropdownMenu" class="hidden right-0 w-full bg-gray-200 absolute lg:static lg:flex lg:flex-row z-10 text-white py-2 px-4 border border-slate-200 lg:gap-x-5 lg:border-none gap-y-2 text-xs my-10">
+          <li class="border-b lg:border-none hover:bg-gray-600 lg:hover:bg-transparent lg:px-2 border-slate-200 py-1">
+            <a href="./index.html" class="flex gap-x-2 items-center">
+              <img src="/public/images/House With Garden.svg" width="25px" alt="">
+              <span>خانه</span>
+            </a>
+          </li>
+          <li class="border-b  py-1 lg:border-none  lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
+            <a href="searchJobs.html" target="_blank" class="flex gap-x-2 items-center">
+              <img src="/public/images/Magnifying Glass Tilted Left.svg" width="25px" alt="">
               <span>جستجوی مشاغل</span>
-              </a>
+            </a>
+          </li>
+          <li class=" border-b py-1 lg:border-none  lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
+            <a href="onlineResumeBuilder.html" target="_blank" class="flex gap-x-2 items-center">
+              <img src="/public/images/Dizzy.svg" width="25px" alt="">
+              <span>رزومه ساز</span>
+            </a>
+          </li>
+          <li class="flex border-b py-1 lg:border-none lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
+            <a href="best_company.html" target="_blank" class="flex gap-x-2 items-center">
+              <img src="/public/images/Gem Stone.svg" width="25px" alt="">
+              <span>۵۰ شرکت برتر</span>
+            </a>
+          </li>
+          <li class=" py-1  hover:bg-gray-600 lg:hover:bg-transparent">
+            <a href="" class="flex gap-x-2 items-center">
+              <img src="/public/images/Office Building.svg" width="25px" alt="">
+              <span>بخش کارفرمایان</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="lg:hidden" href="./searchJobs.html">
+        <i class="fa-solid fa-search text-gray-300 hover:text-white"></i>
+      </a>
+    </div>
+    <div class="flex gap-x-20 lg:flex-row-reverse ">
+      <a href="./index.html" class="flex items-center px-8 text-white">jobinja</a>
+      <div class="relative px-4 py-2 text-gray-300 flex items-center gap-x-5">
+        <button class="flex items-center">
+          <i class="fa-regular fa-bell hover:text-white"></i>
+        </button>
+        <button class="flex items-center lg:hidden">
+          <i class="fa-solid fa-user hover:text-white"></i>
+        </button>
+        <div class="">
+          <ul class="hidden absolute text-xs text-white lg:flex flex-col lg:flex-row lg:gap-x-5 lg:bg-transparent gap-y-2 left-0 my-10 p-2 bg-gray-800 lg:static  gap-x-2">
+            <li class="py-2 hover:bg-gray-900 lg:hover:bg-transparent border-b border-slate-200 lg:border-none">
+              <i class="fa-solid fa-user pl-2" style="color: #979595;"></i>
+              <a href="">ورود کارجو</a>
+
             </li>
-            <li class=" border-b py-1 lg:border-none  lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
-              <a href="onlineResumeBuilder.html" target="_blank" class="flex gap-x-2 items-center">
-                <img src="/public/images/Dizzy.svg" width="25px" alt="">
-                <span>رزومه ساز</span>
-              </a>
-            </li>
-            <li class="flex border-b py-1 lg:border-none lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent">
-              <a href="best_company.html" target="_blank" class="flex gap-x-2 items-center">
-                <img src="/public/images/Gem Stone.svg" width="25px" alt="">
-                <span href="">۵۰ شرکت برتر</span>
-              </a>
-            </li>
-            <li class=" py-1  hover:bg-gray-600 lg:hover:bg-transparent">
-              <a href="" class="flex gap-x-2 items-center">
-                <img src="/public/images/Office Building.svg" width="25px" alt="">
-                <span>بخش کارفرمایان</span>
-              </a>
+            <li class="py-2 hover:bg-gray-900 lg:hover:bg-transparent">
+              <i class="fa-solid fa-right-to-bracket fa-rotate-180 fa-lg pr-2" style="color: #777879;"></i>
+              <a href="">ثبت نام کارجو</a>
             </li>
           </ul>
-        </nav>
-        <a class="lg:hidden" href="./searchJobs.html">
-          <i class="fa-solid fa-search text-gray-300 hover:text-white"></i>
-        </a>
-      </div>
-      <div class="flex gap-x-20 lg:flex-row-reverse ">
-        <a href="./index.html" class="flex items-center px-8 text-white">jobinja</a>
-        <div class="relative px-4 py-2 text-gray-300 flex items-center gap-x-5">
-          <button class="flex items-center">
-            <i class="fa-regular fa-bell hover:text-white"></i>
-          </button>
-          <button class="flex items-center lg:hidden">
-            <i class="fa-solid fa-user hover:text-white"></i>
-          </button>
-          <div class="">
-            <ul class="hidden absolute text-xs text-white flex flex-col lg:flex-row lg:gap-x-5 lg:bg-transparent gap-y-2 left-0 my-10 p-2 bg-gray-800 lg:static lg:flex gap-x-2">
-              <li class="py-2 hover:bg-gray-900 lg:hover:bg-transparent border-b border-slate-200 lg:border-none">
-                <a href="">ورود کارجو</a>
-              </li>
-              <li class="py-2 hover:bg-gray-900 lg:hover:bg-transparent">
-                <a href="">ثبت نام کارجو</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-     
     </div>
-  </header>
+
+  </div>
+</header>
 
     <main class="bg-gray-10">
         <div class="container py-12">
@@ -86,9 +90,8 @@
             </section>
             <section class="flex py-10 flex-col lg:flex-row lg:justify-between gap-y-5">
                 <article class="border border-slate-200 lg:w-2/3 rounded p-4 bg-white">
-                    <h1 class="font-extrabold text-lg"> قوانین و شرایط استفاده کارفرمایان  </h1>
-                   <p class="py-4 text-gray-500"> هرگونه استفاده از جابینجا به معنی پذیرفتن شرایط مندرج در این سایت است. جابینجا هیچ توافقی با کاربران خارج از این شرایط ندارد. شرایط زیر مربوط به کسانی است که به هر شکلی از آگهی‌های منتشر شده‌ جابینجا استفاده می‌کنند.
-
+                    <h1 class=" text-lg"> قوانین و شرایط استفاده کارفرمایان  </h1>
+                   <p class="py-4 text-gray-50"> هرگونه استفاده از جابینجا به معنی پذیرفتن شرایط مندرج در این سایت است. جابینجا هیچ توافقی با کاربران خارج از این شرایط ندارد. شرایط زیر مربوط به کسانی است که به هر شکلی از آگهی‌های منتشر شده‌ جابینجا استفاده می‌کنند.
                     موارد زیر منجر به عدم انتشار آگهی و یا تغییر آن خواهد شد:
                     مغایرت با قوانین جاری جمهوری اسلامی ایران و عرف جامعه، ناقض حریم شخصی افراد، نقص در اطلاعات شرکت (مانند لوگو، شرح فعالیت، آدرس وب‌سایت، شماره تلفن و...)، هر گونه توهین به ادیان رسمی کشور، آداب، رسوم، قومیت‌ها، لهجه‌ها و گویش‌های مختلف، استفاده از نام یا لوگوی سازمان دیگری بدون اجازه کتبی از آن مجموعه (ضروری است این اجازه ممهور به مهر شرکتی آن سازمان باشد و برای مسئول مربوطه در جابینجا ارسال شود.)، هر نوع آگهی و خبرپراکنی سیاسی، اجتماعی یا مذهبی، انتشار آگهی در زمینه شبکه‌های هرمی و فعالیت‌های غیرقانونی و غیرمجاز اقتصادی مشابه، درج آدرس وب‌سایت و اطلاعات تماس (مانند شماره تلفن یا آدرس ایمیل) در متن آگهی، وجود جملات نادرست از نظر املایی. </p>
                 </article>
@@ -255,56 +258,36 @@
 
         <div class="flex flex-col justify-center">
           <div class="flex items-center">
-            <span
-              class="border-b text-gray-300 lg:py-2 lg:w-1/2 hidden lg:block"
-              >جابینجا در شبکه های اجتماعی</span
-            >
+            <span class="border-b text-gray-300 lg:py-2 lg:w-1/2 hidden lg:block">جابینجا در شبکه های اجتماعی</span>
           </div>
           <ul class="flex flex-col justify-center items-center">
             <li>
               <div class="flex gap-4 justify-center mt-5">
                 <div>
-                  <a href="/"
-                    ><img class="w-10 h-10" src="/public/images/instagram.webp"
-                  /></a>
+                  <a href="/"><img class="w-10 h-10" src="/public/images/instagram.webp"/></a>
                 </div>
                 <div>
-                  <a href="/"
-                    ><img
-                      class="w-10 h-10"
-                      src="/public/images/twitter.svg.png"
-                  /></a>
+                  <a href="/"><img class="w-10 h-10" src="/public/images/twitter.svg.png"/></a>
                 </div>
                 <div>
-                  <a href="/"
-                    ><img
-                      class="w-10 h-10 rounded-3xl"
-                      src="/public/images/telegram.jpg"
-                  /></a>
+                  <a href="/"><img class="w-10 h-10 rounded-3xl" src="/public/images/telegram.jpg"/></a>
                 </div>
                 <div>
-                  <a href="/"
-                    ><img
-                      class="w-10 h-10"
-                      src="/public/images/linkedin.svg.webp"
-                  /></a>
+                  <a href="/"><img class="w-10 h-10" src="/public/images/linkedin.svg.webp"/></a>
+                </div>
+                <div>
+                <a href="/"><img class="w-12 h-8 my-10" src="/public/images/logo-gray.webp"/></a>
                 </div>
               </div>
-            </li>
-            <div>
-              <a href="/"
-                ><img
-                  class="w-12 h-8 my-10"
-                  src="/public/images/logo-gray.webp"
-              /></a>
-            </div>
+
             <div>
               <span
                 class="text-gray-300 text-right max-w-80 flex justify-center items-center lg:block"
                 >با معتبرترین شرکت‌های کشور آشنا شوید و محل کار آینده خود را
-                هوشمندانه انتخاب کنید.</span
-              >
+                هوشمندانه انتخاب کنید.
+              </span>
             </div>
+            </li>
           </ul>
         </div>
       </div>
