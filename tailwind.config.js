@@ -8,7 +8,11 @@ module.exports = {
       fontFamily: {
         iransans: ["IranSans", "sans-serif"], // اضافه کردن فونت به Tailwind
       },
+      backgroundImage: {
+        gradient_green: "url('../public/images/gradient-3.png')",
+        hand_form: "url('../public/images/hand.webp')",
 
+      },
       container: {
         center: true,
         padding: '1.5rem',
@@ -47,7 +51,6 @@ module.exports = {
           300: '#253D4E',
           400: '#1abc9c',
           500: '#00b38f',
-          50: '#e5f7f3',
           600: '#4285f4',
           700: '#4367cb',
           50: '#4367cb'
@@ -73,7 +76,17 @@ module.exports = {
           100: '#c93d31',
           200: '#e3342f'
         }
-      }
+      },
+      width: {
+        1140: "71.25rem",
+        800: "44.25rem",
+
+      },
+      height: {
+        500: "31.25rem",
+        400: "24.25rem",
+
+      },
     },
   },
   plugins: [],
