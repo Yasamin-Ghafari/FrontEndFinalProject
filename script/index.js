@@ -1,5 +1,30 @@
 // 50 شغل برتر
 
+
+// const loginTab = document.getElementById('loginTab');
+// const registerTab = document.getElementById('registerTab');
+// const loginContent = document.getElementById('loginContent');
+// const registerContent = document.getElementById('registerContent');
+//
+// loginTab.addEventListener('click', () => {
+//     loginTab.classList.add('border-blue-500', 'text-blue-500');
+//     registerTab.classList.remove('border-blue-500', 'text-blue-500');
+//     loginContent.classList.remove('hidden');
+//     registerContent.classList.add('hidden');
+// });
+//
+// registerTab.addEventListener('click', () => {
+//     registerTab.classList.add('border-blue-500', 'text-blue-500');
+//     loginTab.classList.remove('border-blue-500', 'text-blue-500');
+//     registerContent.classList.remove('hidden');
+//     loginContent.classList.add('hidden');
+// });
+//
+// // پیش‌فرض نمایش تب ورود
+// loginTab.classList.add('border-blue-500', 'text-blue-500');
+// loginContent.classList.remove('hidden');
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const accordionHeader = document.getElementById("accordion-header");
     const accordionContent = document.getElementById("accordion-content");
@@ -84,6 +109,33 @@ new Swiper('.myswiper1',{
         }
     }})
 
+new Swiper('.myswiper2',{
+    pagination: {
+        el: ".swiper-pagination",
+    },
+
+    slidesPerView: 1,
+    loop: true,
+    speed: 400,
+    navigation: {
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+    },
+    spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        480: {
+            slidesPerView: 2
+        },
+        640: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 1
+        }
+    }})
 
 
 const menuButton = document.getElementById("menuButton");
