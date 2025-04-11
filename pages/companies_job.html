@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/all.min.css" />
+    <link href="../dist/stylesheet.css" rel="stylesheet" />
+    <title>فرصت های شغلی | موقعیت شغلی | جابینجا</title>
+</head>
+<body class="bg-gray-500">
+<!-- header -->
+<header class="bg-gray-200">
+    <div
+            class="container relative py-4 lg:h-4 lg:py-10 flex justify-between font-bold items-center"
+    >
+        <div class="flex px-4 py-2 items-center gap-x-2">
+            <button
+                    id="menuButton"
+                    class="lg:hidden px-3 py-2 bg-gray-400 text-white"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="">
+                <ul
+                        id="dropdownMenu"
+                        class="hidden right-0 w-full bg-gray-200 absolute lg:static lg:flex lg:flex-row z-10 text-white py-2 px-4 border border-slate-200 lg:gap-x-5 lg:border-none gap-y-2 text-xs my-10"
+                >
+                    <li
+                            class="border-b lg:border-none hover:bg-gray-600 lg:hover:bg-transparent lg:px-2 border-slate-200 py-1"
+                    >
+                        <a href="./index.html" class="flex gap-x-2 items-center">
+                            <img
+                                    src="/public/images/House With Garden.svg"
+                                    width="25px"
+                                    alt=""
+                            />
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li
+                            class="border-b py-1 lg:border-none lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent"
+                    >
+                        <a
+                                href="searchJobs.html"
+                                target="_blank"
+                                class="flex gap-x-2 items-center"
+                        >
+                            <img
+                                    src="/public/images/Magnifying Glass Tilted Left.svg"
+                                    width="25px"
+                                    alt=""
+                            />
+                            <span>جستجوی مشاغل</span>
+                        </a>
+                    </li>
+                    <li
+                            class="border-b py-1 lg:border-none lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent"
+                    >
+                        <a
+                                href="onlineResumeBuilder.html"
+                                target="_blank"
+                                class="flex gap-x-2 items-center"
+                        >
+                            <img src="/public/images/Dizzy.svg" width="25px" alt="" />
+                            <span>رزومه ساز</span>
+                        </a>
+                    </li>
+                    <li
+                            class="flex border-b py-1 lg:border-none lg:px-2 border-slate-200 hover:bg-gray-600 lg:hover:bg-transparent"
+                    >
+                        <a
+                                href="best_company.html"
+                                target="_blank"
+                                class="flex gap-x-2 items-center"
+                        >
+                            <img src="/public/images/Gem Stone.svg" width="25px" alt="" />
+                            <span>۵۰ شرکت برتر</span>
+                        </a>
+                    </li>
+                    <li class="py-1 hover:bg-gray-600 lg:hover:bg-transparent">
+                        <a href="" class="flex gap-x-2 items-center">
+                            <img
+                                    src="/public/images/Office Building.svg"
+                                    width="25px"
+                                    alt=""
+                            />
+                            <span>بخش کارفرمایان</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="lg:hidden" href="./searchJobs.html">
+                <i class="fa-solid fa-search text-gray-300 hover:text-white"></i>
+            </a>
+        </div>
+        <div class="flex gap-x-20 lg:flex-row-reverse">
+            <a href="./index.html" class="flex items-center px-8 text-white"
+            >jobinja</a
+            >
+            <div
+                    class="relative px-4 py-2 text-gray-300 flex items-center gap-x-5"
+            >
+                <button class="flex items-center">
+                    <i class="fa-regular fa-bell hover:text-white"></i>
+                </button>
+                <button class="flex items-center lg:hidden">
+                    <i class="fa-solid fa-user hover:text-white"></i>
+                </button>
+                <div class="">
+                    <ul
+                            class="hidden absolute text-xs text-white lg:flex flex-col lg:flex-row lg:gap-x-5 lg:bg-transparent gap-y-2 left-0 my-10 p-2 bg-gray-800 lg:static gap-x-2"
+                    >
+                        <li
+                                class="py-2 hover:bg-gray-900 lg:hover:bg-transparent border-b border-slate-200 lg:border-none"
+                        >
+                            <i class="fa-solid fa-user pl-2" style="color: #979595"></i>
+                            <a href="">ورود کارجو</a>
+                        </li>
+                        <li class="py-2 hover:bg-gray-900 lg:hover:bg-transparent">
+                            <i
+                                    class="fa-solid fa-right-to-bracket fa-rotate-180 fa-lg pr-2"
+                                    style="color: #777879"
+                            ></i>
+                            <a href="">ثبت نام کارجو</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="bg-companies bg-cover bg-center h-370 w-full relative">
+    <div class="container absolute bottom-0 right-0 flex gap-4">
+        <div class="w-24 h-24 border-2 border-gray-300">
+            <img src="/public/images/snap.png" class="w-full h-full object-cover rounded"/>
+        </div>
+        <div class="flex flex-col justify-center gap-2 text-white">
+            <span>اسنپ فود | Snappfood</span>
+            <div class="flex">
+                <span>تاسیس در ۱۳۸۸ </span>
+                <span>کامپیوتر، فناوری اطلاعات و اینترنت  </span>
+                <span>بیش از ۱۰۰۰ نفر  </span>
+                <span> snappfood.ir  </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--tab-->
+<section class="bg-white border-b border-slate-300">
+    <div class="container flex text-gray-50 gap-4 p-8 cursor-pointer">
+        <a href="#" class="hover:text-blue-700">در یک نگاه</a>
+        <a href="companies_about.html" class="hover:text-blue-700">معرفی</a>
+        <a href="companies_job.html" class="hover:text-blue-700">فرصت های شغلی<span class="bg-green-1000 p-1 rounded mr-2 text-white">86</span></a>
+    </div>
+</section>
+
+<section class="container mt-4">
+    <div class="bg-white border border-slate-300 p-8">
+        <span class="text-gray-200">معرفی اسنپ فود</span>
+        <p class="text-gray-50">
+            اسنپ‌فود بزرگترین سرویس آنلاین سفارش غذا در ایرانه که در کنار غذا، سرویس‌هایی از جمله سفارش نان، پروتئین، شیرینی و میوه رو هم در خودش داره.
+            همراهی صمیمانه و اعتماد بیش از ۵ میلیون کاربر ما رو بر این داشته که همواره به دنبال خلق پدیده‌های تازه و راهی برای خدمت‌رسانی بهتر و باکیفیت‌تر باشیم.
+            ما در این مسیر علاقه‌مند به همکاری با افرادی هستیم که با هوشمندی و سرعت عملشون در عبور از چالش‌ها و مسائل کسب‌وکار یاریگرمون باشن.
+        </p>
+    </div>
+</section>
+
+<section class="container">
+            <div class="bg-white justify-center flex flex-col lg:my-4  border border-r-4 border-slate-200">
+                <div
+                        class="flex flex-row justify-between px-5 gap-x-20 pb-2 "
+                >
+                </div>
+                <div class="py-2 px-5">
+                    <ul class="flex flex-col gap-y-5">
+                        <li
+                                class="border-b flex flex-col lg:flex-row lg:justify-between lg:items-center border-slate-200"
+                        >
+                            <div class="lg:flex">
+                                <div class="flex justify-center">
+                                    <img
+                                            class="w-24"
+                                            src="/public/images/learning.jpg"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="px-5">
+                                    <h1 class="text-blue-700">برنامه نویس فرانت</h1>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-regular fa-building"></i>
+                                        <span class="">ساختمان هوشمند</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="">خراسان رضوی</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-file-signature"></i>
+                                        <span class="">قرارداد تمام وقت</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center gap-y-3 py-5">
+                                <button
+                                        class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10"
+                                >
+                                    ارسال رزومه
+                                </button>
+                                <button
+                                        class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border lg:items-center border-slate-200 lg:px-10"
+                                >
+                                    <i class="fa-regular fa-star text-gray-50"></i>
+                                    <span class="text-gray-50">نشان کردن</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li
+                                class="border-b flex flex-col lg:flex-row lg:justify-between lg:items-center border-slate-200"
+                        >
+                            <div class="lg:flex">
+                                <div class="flex justify-center">
+                                    <img
+                                            class="w-24"
+                                            src="/public/images/learning.jpg"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="px-5">
+                                    <h1 class="text-blue-700">برنامه نویس فرانت</h1>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-regular fa-building"></i>
+                                        <span class="">ساختمان هوشمند</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="">خراسان رضوی</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-file-signature"></i>
+                                        <span class="">قرارداد تمام وقت</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center gap-y-3 py-5">
+                                <button
+                                        class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10"
+                                >
+                                    ارسال رزومه
+                                </button>
+                                <button
+                                        class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border lg:items-center border-slate-200 lg:px-10"
+                                >
+                                    <i class="fa-regular fa-star text-gray-50"></i>
+                                    <span class="text-gray-50">نشان کردن</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li
+                                class="border-b flex flex-col lg:flex-row lg:justify-between lg:items-center border-slate-200"
+                        >
+                            <div class="lg:flex">
+                                <div class="flex justify-center">
+                                    <img
+                                            class="w-24"
+                                            src="/public/images/learning.jpg"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="px-5">
+                                    <h1 class="text-blue-700">برنامه نویس فرانت</h1>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-regular fa-building"></i>
+                                        <span class="">ساختمان هوشمند</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="">خراسان رضوی</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-file-signature"></i>
+                                        <span class="">قرارداد تمام وقت</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center gap-y-3 py-5">
+                                <button
+                                        class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10"
+                                >
+                                    ارسال رزومه
+                                </button>
+                                <button
+                                        class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border lg:items-center border-slate-200 lg:px-10"
+                                >
+                                    <i class="fa-regular fa-star text-gray-50"></i>
+                                    <span class="text-gray-50">نشان کردن</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li
+                                class="border-b flex flex-col lg:flex-row lg:justify-between lg:items-center border-slate-200"
+                        >
+                            <div class="lg:flex">
+                                <div class="flex justify-center">
+                                    <img
+                                            class="w-24"
+                                            src="/public/images/learning.jpg"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="px-5">
+                                    <h1 class="text-blue-700">برنامه نویس فرانت</h1>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-regular fa-building"></i>
+                                        <span class="">ساختمان هوشمند</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="">خراسان رضوی</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-file-signature"></i>
+                                        <span class="">قرارداد تمام وقت</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center gap-y-3 py-5">
+                                <button
+                                        class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10"
+                                >
+                                    ارسال رزومه
+                                </button>
+                                <button
+                                        class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border lg:items-center border-slate-200 lg:px-10"
+                                >
+                                    <i class="fa-regular fa-star text-gray-50"></i>
+                                    <span class="text-gray-50">نشان کردن</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li
+                                class="border-b flex flex-col lg:flex-row lg:justify-between lg:items-center border-slate-200"
+                        >
+                            <div class="lg:flex">
+                                <div class="flex justify-center">
+                                    <img
+                                            class="w-24"
+                                            src="/public/images/learning.jpg"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="px-5">
+                                    <h1 class="text-blue-700">برنامه نویس فرانت</h1>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-regular fa-building"></i>
+                                        <span class="">ساختمان هوشمند</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="">خراسان رضوی</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-file-signature"></i>
+                                        <span class="">قرارداد تمام وقت</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center gap-y-3 py-5">
+                                <button
+                                        class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10"
+                                >
+                                    ارسال رزومه
+                                </button>
+                                <button
+                                        class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border lg:items-center border-slate-200 lg:px-10"
+                                >
+                                    <i class="fa-regular fa-star text-gray-50"></i>
+                                    <span class="text-gray-50">نشان کردن</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li
+                                class="border-b flex flex-col lg:flex-row lg:justify-between lg:items-center border-slate-200"
+                        >
+                            <div class="lg:flex">
+                                <div class="flex justify-center">
+                                    <img
+                                            class="w-24"
+                                            src="/public/images/learning.jpg"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="px-5">
+                                    <h1 class="text-blue-700">برنامه نویس فرانت</h1>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-regular fa-building"></i>
+                                        <span class="">ساختمان هوشمند</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="">خراسان رضوی</span>
+                                    </div>
+                                    <div class="flex gap-x-2 items-center text-gray-50">
+                                        <i class="fa-solid fa-file-signature"></i>
+                                        <span class="">قرارداد تمام وقت</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center gap-y-3 py-5">
+                                <button
+                                        class="bg-green-700 hover:bg-green-200 rounded-lg py-3 text-white font-bold lg:px-10"
+                                >
+                                    ارسال رزومه
+                                </button>
+                                <button
+                                        class="flex justify-center text-gray-500 rounded-lg gap-x-2 py-3 border lg:items-center border-slate-200 lg:px-10"
+                                >
+                                    <i class="fa-regular fa-star text-gray-50"></i>
+                                    <span class="text-gray-50">نشان کردن</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<!-- pagination -->
+<section class="container">
+    <div
+            class="hidden flex-row-reverse lg:flex justify-center items-center space-x-2 py-12"
+    >
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            1
+        </button>
+        <button class="px-4 py-2 border rounded-lg bg-blue-200 text-white">
+            2
+        </button>
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            3
+        </button>
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            4
+        </button>
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            5
+        </button>
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            6
+        </button>
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            7
+        </button>
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            8
+        </button>
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            9
+        </button>
+        <button
+                class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-200"
+        >
+            10
+        </button>
+    </div>
+
+    <div class="flex justify-center items-center mt-12 lg:hidden">
+        <button
+                class="flex justify-center items-baseline gap-2 px-4 py-2 border rounded-lg bg-white text-blue-100"
+        >
+            <i class="fa-solid fa-arrow-right-long text-blue-10" ></i
+            >صفحه بعد
+        </button>
+    </div>
+</section>
+
+<!--  فوتر-->
+<footer class="bg-gray-100">
+    <div
+            class="container py-8 h-auto flex flex-col lg:flex-row lg:justify-evenly lg:items-baseline"
+    >
+        <div class="flex flex-col">
+            <div
+                    class="flex my-2 items-center justify-between lg:justify-start p-4 shadow-lg lg:shadow-none rounded-lg lg:bg-transparent bg-gray-200"
+            >
+            <span class="lg:border-b lg:py-2 lg:w-1/2 text-gray-300"
+            >کارجویان</span
+            >
+                <i
+                        class="fa-solid fa-angle-down flex lg:hidden transition-transform duration-300 cursor-pointer"
+                        id="arrow"
+                        style="color: gray"
+                ></i>
+            </div>
+            <div class="hidden flex-col gap-y-4 lg:block" id="menu1">
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./jobSeekersQuestions.html">سوالات متداول کارجویان</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./jobSeekerFaq.html">قوانین و مقررات کارجویان</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="/">لیست مشاغل</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./searchJobs.html">آگهی های استخدام</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="/">ورود / ثبت نام کارجو</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./jobAlert.html">ایمیل های اطلاع رسانی</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./onlineResumeBuilder.html">رزومه ساز آنلاین</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./best_company.html">آشنایی با شرکت ها</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col">
+            <div
+                    class="flex my-2 items-baseline p-4 shadow-lg lg:shadow-none justify-between lg:justify-start rounded-lg lg:bg-transparent bg-gray-200"
+            >
+            <span class="lg:border-b lg:py-2 lg:w-1/2 text-gray-300"
+            >کارفرمایان</span
+            >
+                <i
+                        class="fa-solid fa-angle-down flex lg:hidden transition-transform duration-300 cursor-pointer"
+                        id="arrow1"
+                        style="color: gray"
+                ></i>
+            </div>
+            <div class="hidden flex-col gap-y-4 lg:block" id="menu2">
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./employerQuestions.html">سوالات متداول کارفرمایان</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./employerFaqs.html">قوانین و مقررات کارفرمایان</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="">درج آگهی استخدام</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="/">ورود به بخش کارفرمایان</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="/">تعرفه ی انتشار آگهی</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="/">سوالات متداول</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col">
+            <div
+                    class="flex my-2 items-baseline p-4 justify-between lg:justify-start shadow-lg lg:shadow-none rounded-lg lg:bg-transparent bg-gray-200"
+            >
+            <span class="lg:border-b lg:py-2 lg:w-1/2 text-gray-300"
+            >جابینجا</span
+            >
+                <i
+                        class="fa-solid fa-angle-down flex lg:hidden transition-transform duration-300 cursor-pointer"
+                        id="arrow2"
+                        style="color: gray"
+                ></i>
+            </div>
+
+            <div class="hidden flex-col gap-y-4 lg:block" id="menu3">
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./CallJobinja.html">تماس با جابینجا</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./inPress.html">جابینجا در رسانه ها</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="./howTo.html">راهنمای استفاده برای کارجویان</a>
+                </div>
+                <div
+                        class="py-1 px-2 hover:bg-gray-200 border-b border-gray-800 text-white lg:border-none"
+                >
+                    <a href="/">وبلاگ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center">
+            <div class="flex items-center">
+            <span
+                    class="border-b text-gray-300 lg:py-2 lg:w-1/2 hidden lg:block"
+            >جابینجا در شبکه های اجتماعی</span
+            >
+            </div>
+            <ul class="flex flex-col justify-center items-center">
+                <li>
+                    <div class="flex gap-4 justify-center mt-5">
+                        <div>
+                            <a href="/"
+                            ><img class="w-10 h-10" src="/public/images/instagram.webp"
+                            /></a>
+                        </div>
+                        <div>
+                            <a href="/"
+                            ><img
+                                    class="w-10 h-10"
+                                    src="/public/images/twitter.svg.png"
+                            /></a>
+                        </div>
+                        <div>
+                            <a href="/"
+                            ><img
+                                    class="w-10 h-10 rounded-3xl"
+                                    src="/public/images/telegram.jpg"
+                            /></a>
+                        </div>
+                        <div>
+                            <a href="/"
+                            ><img
+                                    class="w-10 h-10"
+                                    src="/public/images/linkedin.svg.webp"
+                            /></a>
+                        </div>
+                    </div>
+
+                <div>
+                    <a href="/"
+                    ><img
+                            class="w-12 h-8 my-10"
+                            src="/public/images/logo-gray.webp"
+                    /></a>
+                </div>
+                <div>
+              <span
+                      class="text-gray-300 text-right max-w-80 flex justify-center items-center lg:block"
+              >با معتبرترین شرکت‌های کشور آشنا شوید و محل کار آینده خود را
+                هوشمندانه انتخاب کنید.</span
+              >
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-white pb-5 flex justify-center">
+        © ۱۴۰۳ - تمامی حقوق برای جابینجا محفوظ است.
+    </div>
+</footer>
+</body>
+<script src="/script/index.js"></script>
+</html>

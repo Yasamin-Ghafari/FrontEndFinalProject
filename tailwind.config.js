@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {
         gradient_green: "url('../public/images/gradient-3.png')",
         hand_form: "url('../public/images/hand.webp')",
+        companies: "url('../public/images/main.webp')",
 
       },
       container: {
@@ -70,6 +71,7 @@ module.exports = {
           700: '#1abc9c',
           800: '#008c67',
           900: '#17a689',
+          1000: '#008a6e',
         },
         brown: {
           500: '#F0E8D5'
