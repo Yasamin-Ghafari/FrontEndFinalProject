@@ -1,58 +1,3 @@
-// 50 شغل برتر
-
-
-// const loginTab = document.getElementById('loginTab');
-// const registerTab = document.getElementById('registerTab');
-// const loginContent = document.getElementById('loginContent');
-// const registerContent = document.getElementById('registerContent');
-//
-// loginTab.addEventListener('click', () => {
-//     loginTab.classList.add('border-blue-500', 'text-blue-500');
-//     registerTab.classList.remove('border-blue-500', 'text-blue-500');
-//     loginContent.classList.remove('hidden');
-//     registerContent.classList.add('hidden');
-// });
-//
-// registerTab.addEventListener('click', () => {
-//     registerTab.classList.add('border-blue-500', 'text-blue-500');
-//     loginTab.classList.remove('border-blue-500', 'text-blue-500');
-//     registerContent.classList.remove('hidden');
-//     loginContent.classList.add('hidden');
-// });
-//
-// // پیش‌فرض نمایش تب ورود
-// loginTab.classList.add('border-blue-500', 'text-blue-500');
-// loginContent.classList.remove('hidden');
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const accordionHeader = document.getElementById("accordion-header");
-    const accordionContent = document.getElementById("accordion-content");
-    const accordionIcon = document.getElementById("accordion-icon");
-    const imageContainer = document.getElementById("image-container");
-    const imagePlaceholder = document.getElementById("image-placeholder");
-
-    let isOpen = false;
-
-    accordionHeader.addEventListener("click", function () {
-        isOpen = !isOpen;
-
-        if (isOpen) {
-            accordionContent.style.maxHeight = "500px";
-            accordionContent.style.opacity = "1";
-
-            // Move image to the second div
-            imagePlaceholder.appendChild(imageContainer.firstElementChild);
-        } else {
-            accordionContent.style.maxHeight = "0";
-            accordionContent.style.opacity = "0";
-
-            // Move image back to the first div
-            imageContainer.appendChild(imagePlaceholder.firstElementChild);
-        }
-    });
-});
-
 
 new Swiper('.myswiper',{
     slidesPerView: 1,
@@ -136,6 +81,64 @@ new Swiper('.myswiper2',{
             slidesPerView: 1
         }
     }})
+
+
+// 50 شغل برتر
+
+
+// const loginTab = document.getElementById('loginTab');
+// const registerTab = document.getElementById('registerTab');
+// const loginContent = document.getElementById('loginContent');
+// const registerContent = document.getElementById('registerContent');
+//
+// loginTab.addEventListener('click', () => {
+//     loginTab.classList.add('border-blue-500', 'text-blue-500');
+//     registerTab.classList.remove('border-blue-500', 'text-blue-500');
+//     loginContent.classList.remove('hidden');
+//     registerContent.classList.add('hidden');
+// });
+//
+// registerTab.addEventListener('click', () => {
+//     registerTab.classList.add('border-blue-500', 'text-blue-500');
+//     loginTab.classList.remove('border-blue-500', 'text-blue-500');
+//     registerContent.classList.remove('hidden');
+//     loginContent.classList.add('hidden');
+// });
+//
+// // پیش‌فرض نمایش تب ورود
+// loginTab.classList.add('border-blue-500', 'text-blue-500');
+// loginContent.classList.remove('hidden');
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionHeader = document.getElementById("accordion-header");
+    const accordionContent = document.getElementById("accordion-content");
+    const accordionIcon = document.getElementById("accordion-icon");
+    const imageContainer = document.getElementById("image-container");
+    const imagePlaceholder = document.getElementById("image-placeholder");
+
+    let isOpen = false;
+
+    accordionHeader.addEventListener("click", function () {
+        isOpen = !isOpen;
+
+        if (isOpen) {
+            accordionContent.style.maxHeight = "500px";
+            accordionContent.style.opacity = "1";
+
+            // Move image to the second div
+            imagePlaceholder.appendChild(imageContainer.firstElementChild);
+        } else {
+            accordionContent.style.maxHeight = "0";
+            accordionContent.style.opacity = "0";
+
+            // Move image back to the first div
+            imageContainer.appendChild(imagePlaceholder.firstElementChild);
+        }
+    });
+});
+
+
 
 
 const menuButton = document.getElementById("menuButton");
